@@ -1,0 +1,70 @@
+# src-relative path (fnmatch patterns allowed)	NET-WOXL compiler flags (after /nologo /c); files not listed use config/flags.tsv, src/net/* use /Od /G5 /QIfdiv
+src/net/*	/Od /G5 /QIfdiv
+src/ajs.c	/Od /G5 /QIfdiv	netmap
+src/ayrace.c	/Od /Oi /G5 /QIfdiv	
+src/blit.c	/Od /G5 /QIfdiv	netmap
+src/camera.c	/O2 /Oa /G5 /QIfdiv	netmap
+src/collide.c	/Od /G5 /QIfdiv	netmap
+src/control.c	/Od /G5 /QIfdiv	netmap
+src/credits.c	/Od /G5 /QIfdiv	netmap
+src/crtfp.c	/Od /G5 /QIfdiv	netmap
+src/d3d.c	/Od /G5 /QIfdiv	netmap
+src/d3denum.c	/Od /G5 /QIfdiv	netmap
+src/d3dpoly.c	/Od /Oi /G5 /QIfdiv	netmap
+src/d3dsetup.c	/Od /G5 /QIfdiv	netmap
+src/d3dsurface.c	/Od /Oi /G5 /QIfdiv	netmap
+src/ddraw.c	/Od /G5 /QIfdiv	netmap
+src/display.c	/Od /G5 /QIfdiv	netmap
+src/droid.c	/Od /G5 /QIfdiv	netmap
+src/drone.c	/Od /Oi /G5 /QIfdiv	netmap
+src/dynam.c	/Od /G5 /QIfdiv	netmap
+src/effects.c	/Od /G5 /QIfdiv	netmap
+src/error.c	/Od /G5 /QIfdiv	netmap
+src/file.c	/Od /G5 /QIfdiv	netmap
+src/hiscores.c	/Od /G5 /QIfdiv	netmap
+src/hud.c	/Od /G5 /QIfdiv	netmap
+src/init.c	/Od /G5 /QIfdiv	netmap
+src/iso9660.c	/Od /G5 /QIfdiv	netmap
+src/libgte.c	/Od /G5 /QIfdiv	netmap
+src/libgteasm.c	/Od /G5 /QIfdiv	netmap
+src/lzss.c	/Od /G5 /QIfdiv	netmap
+src/main.c	/Od /Oi /G5 /QIfdiv	netmap
+src/malloc.c	/Od /G5 /QIfdiv	netmap
+src/menus.c	/Od /G5 /QIfdiv	netmap
+src/mpeg.c	/Od /QIfdiv	netmap
+src/mpegasm.c	/O2 /Oa /G5 /QIfdiv	netmap
+src/mpegdbg.c	/Od /G5 /QIfdiv	netmap
+src/mpegfile.c	/Od /G5 /QIfdiv	netmap
+src/mpegjit.c	/Od /G5 /QIfdiv	netmap
+src/mpegsnd.c	/Od /QIfdiv	netmap
+src/mpegtab.c	/Od /QIfdiv	netmap
+src/mpegvlc.c	/Od /QIfdiv	netmap
+src/object.c	/Od /G5 /QIfdiv	netmap
+src/pad.c	/Od /G5 /QIfdiv	netmap
+src/racectrl.c	/Od /G5 /QIfdiv	netmap
+src/raceinit.c	/Od /G5 /QIfdiv	netmap
+src/radscn.c	/Od /Oi /G5 /QIfdiv	
+src/render.c	/Od /G5 /QIfdiv	netmap
+src/scene.c	/Od /Ob1 /Oi /J /G5 /QIfdiv	netmap
+src/search.c	/Od /G5 /QIfdiv	netmap
+src/sfx.c	/Od /G5 /QIfdiv	netmap
+src/sfxds.c	/Od /Oi /G5 /QIfdiv	netmap
+src/sfxlut.c	/Od /G5 /QIfdiv	netmap
+src/sfxmix.c	/Od /G5 /QIfdiv	netmap
+src/ships.c	/Od /G5 /QIfdiv	netmap
+src/skeleton.c	/O2 /Oa /Oy- /G5 /QIfdiv	netmap
+src/sound.c	/Od /G5 /QIfdiv	netmap
+src/sparks.c	/Od /G5 /QIfdiv	netmap
+src/sparks2.c	/Od /G5 /QIfdiv	netmap
+src/tim.c	/Od /G5 /QIfdiv	netmap
+src/track.c	/Od /G5 /QIfdiv	netmap
+src/trackasm.c	/Od /G5 /QIfdiv	netmap
+src/trails.c	/Od /G5 /QIfdiv	netmap
+src/ttf.c	/Od /G5 /QIfdiv	netmap
+src/utils.c	/Od /G5 /QIfdiv	netmap
+src/wadfile.c	/Od /G5 /QIfdiv	netmap
+src/weapon.c	/Od /Oi /G5 /QIfdiv	
+src/win.c	/Od /G5 /QIfdiv	netmap
+src/wincd.c	/Od /G5 /QIfdiv	netmap
+src/winsnd.c	/Od /G5 /QIfdiv	netmap
+src/dxerror.c	/Od /Oi /G5 /QIfdiv	netmap

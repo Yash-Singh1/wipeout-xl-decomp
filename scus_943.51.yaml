@@ -1,0 +1,144 @@
+name: SCUS_943.51 (Wipeout XL USA)
+sha1: 4c620967bce0cf543fb1fef4d34b20389c4a028c
+options:
+  basename: SCUS_943.51
+  target_path: orig/SCUS_943.51
+  elf_path: build/SCUS_943.51.elf
+  base_path: .
+  platform: psx
+  compiler: GCC
+
+  asm_path: asm
+  src_path: src
+  build_path: build
+  ld_script_path: SCUS_943.51.ld
+  symbol_addrs_path: config/symbol_addrs.txt
+  undefined_funcs_auto_path: undefined_funcs_auto.txt
+  undefined_syms_auto_path: undefined_syms_auto.txt
+
+  gp_value: 0x80093DE4
+  find_file_boundaries: True
+  use_legacy_include_asm: False
+  migrate_rodata_to_functions: True
+  section_order: [".rodata", ".text", ".data", ".bss"]
+  ld_bss_is_noload: True
+  create_undefined_funcs_auto: True
+  create_undefined_syms_auto: True
+  asm_jtbl_label_macro: jlabel
+  string_encoding: ASCII
+  subalign: 4
+  emit_subalign: True
+  ld_align_segment_vram_end: False
+  ld_align_section_vram_end: False
+  data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+segments:
+  - name: header
+    type: header
+    start: 0x0
+
+  - name: pre
+    type: code
+    start: 0x800
+    vram: 0x80010000
+    subsegments:
+      - [0x800, asm]
+
+  - name: main
+    type: code
+    start: 0x6D10
+    vram: 0x80016510
+    bss_size: 0x697A0
+    subsegments:
+      - [0x6D10, .rodata, main]
+      - [0x6E3C, .rodata, object]
+      - [0x6E64, rodata]
+      - [0x6ECC, .rodata, tim]
+      - [0x6F98, rodata]
+      - [0x6FD0, .rodata, track]
+      - [0x7240, .rodata, ttf]
+      - [0x72D4, .rodata, ships]
+      - [0x73DC, .rodata, scene]
+      - [0x75B8, rodata]
+      - [0x75D0, .rodata, weapon]
+      - [0x767C, .rodata, collide]
+      - [0x76CC, rodata]
+      - [0x78A0, .rodata, raceinit]
+      - [0x79DC, .rodata, ayrace]
+      - [0x7AD8, rodata]
+      - [0x7C88, .rodata, init]
+      - [0x7D90, .rodata, sound]
+      - [0x8000, rodata]
+      - [0x8164, .rodata, radscn]
+      - [0x8220, rodata]
+      - [0x82F8, .rodata, iso9660]
+      - [0x8308, rodata]
+      - [0x9378, .rodata, menus]
+      - [0x95D8, .rodata, card]
+      - [0x9654, .rodata, pad]
+      - [0x967C, rodata]
+      - [0x9EE4, .rodata, display]
+      - [0x9F14, rodata]
+      - [0x9F78, .rodata, wadfile]
+      - [0x9FCC, .rodata, progress]
+      - [0xA01C, rodata]
+      - [0xA0A0, .rodata, sfx]
+      - [0xA0EC, .rodata, hiscores]
+      - [0xA2EC, rodata]
+      - [0xA304, rodata]
+      - [0xA388, rodata]
+      - [0xAD04, c, main]
+      - [0xBB58, c, object]
+      - [0xDE68, c, malloc]
+      - [0xE100, c, file]
+      - [0xE258, c, tim]
+      - [0xE8A8, c, skeleton]
+      - [0xF228, c, track]
+      - [0x1085C, c, draw]
+      - [0x10C2C, c, ttf]
+      - [0x10E74, c, camera]
+      - [0x12390, c, ships]
+      - [0x1452C, c, control]
+      - [0x159F0, c, utils]
+      - [0x15D94, c, search]
+      - [0x1622C, c, scene]
+      - [0x170C0, c, weapon]
+      - [0x20954, c, dynam]
+      - [0x226C4, c, collide]
+      - [0x26880, c, hud]
+      - [0x2C250, c, raceinit]
+      - [0x2D530, c, ayrace]
+      - [0x2F268, c, racectrl]
+      - [0x322D0, c, init]
+      - [0x33360, c, sound]
+      - [0x34D9C, c, options]
+      - [0x36880, c, radscn]
+      - [0x37608, c, error]
+      - [0x37700, c, effects]
+      - [0x3BFC8, c, combat]
+      - [0x3D370, c, lzss]
+      - [0x3D514, c, iso9660]
+      - [0x3E210, c, menus]
+      - [0x527F8, c, trackasm]
+      - [0x52F10, c, card]
+      - [0x54E30, c, crack]
+      - [0x55944, c, pad]
+      - [0x56C8C, c, droid]
+      - [0x578FC, c, animover]
+      - [0x57E7C, c, credits]
+      - [0x587E4, c, display]
+      - [0x59208, c, progress]
+      - [0x5AB38, c, wadfile]
+      - [0x5AE7C, c, sparks]
+      - [0x600AC, c, trails]
+      - [0x64D90, c, ghost]
+      - [0x65340, c, drone]
+      - [0x67968, c, sfx]
+      - [0x69EF4, c, hiscores]
+      - [0x6AE44, asm]
+      - [0x7EC78, data]
+      - { start: 0x8494C, type: .sdata, name: options, linker_section_order: .data }
+      - [0x84950, data]
+      - { type: bss, vram: 0x8009495C }
+  - [0x8515C]

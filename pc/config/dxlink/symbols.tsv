@@ -1,0 +1,5 @@
+# addr	name	kind
+10001000	DXSetup	func
+10001180	DllMain	func
+10005030	g_dxAttachCount	data
+10007134	g_dxCallback	data

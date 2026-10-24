@@ -1,0 +1,4 @@
+# file	flags
+*	/O1 /G5
+main.c	/O2 /G5
+setup.c	/O1 /G5

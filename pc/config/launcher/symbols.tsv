@@ -1,0 +1,3 @@
+# addr	name	kind
+401000	WinMain_ILT	func
+401010	WinMain	func

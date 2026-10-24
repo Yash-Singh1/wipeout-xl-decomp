@@ -1,0 +1,58 @@
+name: XTRO1.EXE (Wipeout XL USA intro movie player)
+sha1: 5973487fa00b5e92b4c225959fa0e545800460e1
+options:
+  basename: XTRO1.EXE
+  target_path: ../orig/XTRO1.EXE
+  elf_path: build/XTRO1.EXE.elf
+  base_path: .
+  platform: psx
+  compiler: GCC
+
+  asm_path: asm
+  src_path: src
+  build_path: build
+  ld_script_path: XTRO1.EXE.ld
+  symbol_addrs_path: ../config/symbol_addrs_xtro.txt
+  undefined_funcs_auto_path: undefined_funcs_auto.txt
+  undefined_syms_auto_path: undefined_syms_auto.txt
+
+  gp_value: 0x80148A40
+  find_file_boundaries: True
+  use_legacy_include_asm: False
+  migrate_rodata_to_functions: True
+  section_order: [".rodata", ".text", ".data", ".bss"]
+  ld_bss_is_noload: True
+  create_undefined_funcs_auto: True
+  create_undefined_syms_auto: True
+  asm_jtbl_label_macro: jlabel
+  string_encoding: ASCII
+  subalign: 4
+  emit_subalign: True
+  ld_align_segment_vram_end: False
+  ld_align_section_vram_end: False
+  data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+segments:
+  - name: header
+    type: header
+    start: 0x0
+
+  - name: main
+    type: code
+    start: 0x800
+    vram: 0x80119000
+    bss_size: 0x6DB88
+    subsegments:
+      - [0x800, .rodata, avplay]
+      - [0x894, .rodata, malloc]
+      - [0xBB4, .rodata, iso9660]
+      - [0xE74, rodata]
+      - [0x15DC, asm, start]
+      - [0x166C, c, avplay]
+      - [0x22C0, c, malloc]
+      - [0x2F00, c, iso9660]
+      - [0x3CC4, asm, sdk]
+      - [0xD06C, data]
+      - { type: bss, vram: 0x80138ABC }
+  - [0x202BC]

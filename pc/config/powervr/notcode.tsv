@@ -1,0 +1,53 @@
+# addr	what (removed from functions.tsv: not compiled C)
+4132a0	tail of DamageCollide switch index table at 41329c, read by 412fc4
+418040	tail of DDErrorString switch index table at 418038, read by 417c7c
+426f00	tail of GetTrackName switch index table and alignment padding before LoadMenuImage at 426f10
+435a70	tail of PollKeyboard switch index table at 435a64, read by 4357c3
+44d200	tail of PlayPitchSequence switch index table at 44d1f8, read by 44d150
+44e130	SfxEffectFlag switch index table, read by 44e0d8
+466950	import thunk: jmp [LoadCursorA]
+466956	import thunk: jmp [LoadIconA]
+46695c	import thunk: jmp [BringWindowToTop]
+466962	import thunk: jmp [GetLastActivePopup]
+466968	import thunk: jmp [FindWindowA]
+46696e	import thunk: jmp [GetMessageA]
+466974	import thunk: jmp [wvsprintfA]
+46697a	import thunk: jmp [ReleaseDC]
+466980	import thunk: jmp [GetDC]
+466986	import thunk: jmp [SetWindowsHookExA]
+46698c	import thunk: jmp [UnhookWindowsHookEx]
+466992	import thunk: jmp [SetWindowTextA]
+466998	import thunk: jmp [CallNextHookEx]
+46699e	import thunk: jmp [DeleteDC]
+4669a4	import thunk: jmp [BitBlt]
+4669aa	import thunk: jmp [DPtoLP]
+4669b0	import thunk: jmp [GetObjectA]
+4669b6	import thunk: jmp [SetMapMode]
+4669bc	import thunk: jmp [GetMapMode]
+4669c2	import thunk: jmp [SelectObject]
+4669c8	import thunk: jmp [CreateCompatibleDC]
+4669ce	import thunk: jmp [CreateSolidBrush]
+4669d4	import thunk: jmp [DeleteObject]
+4669da	import thunk: jmp [GetStockObject]
+4669e0	import thunk: jmp [GetSystemPaletteEntries]
+4669e6	import thunk: jmp [RegQueryValueExA]
+4669ec	import thunk: jmp [RegOpenKeyExA]
+4669f2	import thunk: jmp [timeGetTime]
+4669f8	import thunk: jmp [auxGetDevCapsA]
+4669fe	import thunk: jmp [auxGetNumDevs]
+466a04	import thunk: jmp [timeSetEvent]
+466a0a	import thunk: jmp [timeGetDevCaps]
+466a10	import thunk: jmp [auxSetVolume]
+466a16	import thunk: jmp [auxGetVolume]
+466a1c	import thunk: jmp [timeKillEvent]
+466a22	import thunk: jmp [joyGetDevCapsA]
+466a28	import thunk: jmp [joyGetNumDevs]
+466a2e	import thunk: jmp [joyGetPosEx]
+466a34	import thunk: jmp [mciSendCommandA]
+466a3a	import thunk: jmp [DirectDrawCreate]
+466a40	import thunk: jmp [DirectDrawEnumerateA]
+466a46	import thunk: jmp [DirectSoundCreate]
+4715c0	mouse data format object records and descriptor at 471630
+471650	keyboard data format object records and descriptor at 472650
+472668	import thunk: jmp [DirectInputCreateA]
+472669	split artefact inside DirectInputCreateA import thunk at 472668

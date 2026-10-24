@@ -1,0 +1,51 @@
+# file	flags (after /nologo /c)
+*	/O2 /Oa /G5
+sound.c	/Og /Oi /Ot /Oy /Ob2 /Gs /Gy /Oa /G5
+d3dpoly.c	/Od /Oi /Ob2 /G5
+hud.c	/Og /Oi /Ot /Oy /Ob2 /Gs /Gy /Oa /G5
+ayrace.c	/Og /Oi /Ot /Oy /Ob1 /Gs /Gy /Oa /G5
+utils.c	/O2 /Oa /G5 /Ob2
+sparks.c	/Og /Oi /Ot /Oy /Ob2 /Gs /Gy /Oa /G5
+collide.c	/O2 /Ow /G5 /Ob2
+effects.c	/Og /Oi /Ot /Oy /Ob2 /Gs /Gy /Ow /G5
+camera.c	/O2 /Oa /G5 /Ob2 /Gy
+display.c	/O2 /Oa /G5 /Ob2
+sparks2.c	/O2 /Oa /G5 /Ob2
+init.c	/Od /G5
+wincd.c	/Od
+raceinit.c	/Od /G5
+blit.c	/Od /G5
+track.c	/Od /G5
+weapon.c	/Og /Oi /Ot /Oy /Ob2 /Gs /Gy /Ow /G5
+pad.c	/Og /Oi /Ot /Oy /Ob1 /Gs /Gy /Oa /G5
+racectrl.c	/Og /Oi /Ot /Oy /Ob1 /Gs /Gy /Ow /G5
+mpeg.c	/Od
+mpegvlc.c	/Od
+mpegfile.c	/Od
+mpegjit.c	/Od
+mpegtab.c	/Od
+mpegdbg.c	/Od
+mpegsnd.c	/Od /QIfdiv
+wadfile.c	/Od
+winsnd.c	/O2 /Oa /G5
+object.c	/O2 /Oa /G5 /Ob2
+droid.c	/O2 /Ow /G5
+menus.c	/Og /Oi /Ot /Oy /Ob2 /Gs /Gy /Oa /G5
+main.c	/Og /Oi /Ot /Oy /Ob1 /Gs /Gy /Oa /G5
+ships.c	/Og /Oi /Ot /Oy /Ob1 /Gs /Gy /Ow /G5
+render.c	/O2 /G5
+dxerror.c	/Og /Oi /Ot /Oy /Ob1 /Gs /Gy /Ow /G5
+ddraw.c	/Og /Oi /Ot /Oy /Ob2 /Gs /Gy /G5
+scene.c	/O2 /Ow /G5 /Ob2
+hiscores.c	/Og /Oi /Ot /Oy /Ob1 /Gs /Gy /Ow /G5
+radscn.c	/O2 /Ow /G5
+control.c	/O2 /Ow /G5
+win.c	/Og /Oi /Ot /Oy /Ob1 /Gs /Gy /Ow /G5
+d3d.c	/O2 /Ow /G5
+d3dsetup.c	/Og /Ot /Oy /G5
+drone.c	/O2 /Oa /G5 /Ob2
+libgte.c	/O2 /Oa /G5 /Ob2
+d3denum.c	/Og /Oi /Ot /Oy /Ob1 /Gs /Gy /Ow /G5
+sfxlut.c	/O2 /G5
+dynam.c	/O2 /Ow /G5
+trackmarker.c	/O2 /Ow

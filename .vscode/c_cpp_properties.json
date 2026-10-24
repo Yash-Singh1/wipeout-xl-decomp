@@ -1,0 +1,100 @@
+{
+    "configurations": [
+        {
+            "name": "Auto (per folder)",
+            "compileCommands": "${workspaceFolder}/.vscode/compile_commands.json",
+            "includePath": [
+                "${workspaceFolder}/include"
+            ],
+            "defines": [
+                "VERSION_US",
+                "psx",
+                "__psx__",
+                "mips",
+                "__mips__",
+                "LANGUAGE_C",
+                "_LANGUAGE_C",
+                "_MIPSEL"
+            ],
+            "compilerPath": "",
+            "cStandard": "gnu89",
+            "intelliSenseMode": "linux-gcc-x86"
+        },
+        {
+            "name": "PS1 (USA)",
+            "includePath": [
+                "${workspaceFolder}/include"
+            ],
+            "defines": [
+                "VERSION_US",
+                "psx",
+                "__psx__",
+                "mips",
+                "__mips__",
+                "LANGUAGE_C",
+                "_LANGUAGE_C",
+                "_MIPSEL"
+            ],
+            "compilerPath": "",
+            "cStandard": "gnu89",
+            "intelliSenseMode": "linux-gcc-x86"
+        },
+        {
+            "name": "PS1 (Europe)",
+            "includePath": [
+                "${workspaceFolder}/include"
+            ],
+            "defines": [
+                "VERSION_EU",
+                "psx",
+                "__psx__",
+                "mips",
+                "__mips__",
+                "LANGUAGE_C",
+                "_LANGUAGE_C",
+                "_MIPSEL"
+            ],
+            "compilerPath": "",
+            "cStandard": "gnu89",
+            "intelliSenseMode": "linux-gcc-x86"
+        },
+        {
+            "name": "Intro players (xtro)",
+            "includePath": [
+                "${workspaceFolder}/xtro/include"
+            ],
+            "defines": [
+                "VERSION_US",
+                "MOVIE_NAME=xtro1",
+                "MOVIE_FRAMES=630",
+                "psx",
+                "__psx__",
+                "mips",
+                "__mips__",
+                "LANGUAGE_C",
+                "_LANGUAGE_C",
+                "_MIPSEL"
+            ],
+            "compilerPath": "",
+            "cStandard": "gnu89",
+            "intelliSenseMode": "linux-gcc-x86"
+        },
+        {
+            "name": "PC",
+            "includePath": [
+                "${workspaceFolder}/pc/include",
+                "${workspaceFolder}/pc/tools/msvc420/include"
+            ],
+            "defines": [
+                "_WIN32",
+                "_M_IX86=500",
+                "_X86_",
+                "_MSC_VER=1020"
+            ],
+            "compilerPath": "",
+            "cStandard": "c89",
+            "intelliSenseMode": "windows-msvc-x86"
+        }
+    ],
+    "version": 4
+}

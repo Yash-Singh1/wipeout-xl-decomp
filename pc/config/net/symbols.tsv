@@ -1,0 +1,3006 @@
+# addr	name	kind  (NET-WOXL.EXE: lib = C runtime and import thunks, named by tools/libmatch.py against LIBC.LIB; func/data rows come from tools/netmap.py and by hand)
+401000	AddLinePrim	func	similar
+40144f	AddPolyPrim	func	exact
+4016ae	DrawPolyF4	func	exact
+401a92	DrawPolyFT4	func	similar
+4020fe	DrawPixelTexturedQuad	func	similar
+402746	DrawScaledTexturedQuad	func	similar
+402f43	DrawScaledTexturedQuadDirect	func	similar
+40353e	DrawPolyG4	func	exact
+403940	DrawQuadWithAlphaGradient	func	exact
+403e44	DrawPolyG3	func	exact
+4040c1	SortRenderTriangles	func	similar
+4042a8	SubmitRenderTriangles	func	similar
+404d31	StartRenderBuffer	func	exact
+404fce	FinishRenderBuffer	func	exact
+405141	ClipRenderBuffer	func	similar
+4075c0	LoadSample	func	similar
+4076c4	ReadSample	func	similar
+407768	SampleFileLength	func	order
+4077be	InitSpuSound	func	exact
+40789b	InitSpuSamples	func	exact
+407ad1	StartControlledSound	func	similar
+407ba9	UpdateNotes	func	ref4
+407bb4	KillNote	func
+407bbf	KillNotes	func
+407bca	KillFadeNotes	func
+407bd5	PlayNote	func	ref109
+407c3e	KillControlledNote	func	exact
+407c60	PlayDirectionalNote	func	similar
+407e8e	SetPitch	func	similar
+407ebe	SetNoteVolume	func	similar
+407eee	AdjustDirectionalNote	func	similar
+40818f	AdjustDopplerEngine	func	ref3
+4085ba	AdjustRemoteEngineSound	func	similar
+408675	AdjustEngineSound	func	similar
+408a09	InitCD	func	exact
+408a57	InitCrowdSound	func	similar
+408adc	AdjustCrowdSound	func
+408d12	KillControlledSound	func	similar
+408d80	MuteControlledSound	func	similar
+408de3	CdMusicPlay	func	exact
+408e00	CdMusicStop	func	exact
+408e29	PlayPitchSequence	func
+40907d	TerminateSound	func	similar
+4090f3	SetShieldHum	func	similar
+409185	DroidSound	func	similar
+409217	SetPitAmbient	func	similar
+4092a9	SetAmbientLoop3	func	ref5
+409340	CrowdSound	func	similar
+4093d2	ScrapeSound	func	similar
+409470	SetInGameCDTrack	func	similar
+4095ce	SetMenuCDTrack	func	similar
+4096af	CheckShipDestroyed	func
+40998f	CheckForButtonPress	func	similar
+4099fa	PlayCredits	func	similar
+409a6b	Restart	func	similar
+409ce5	QuitGame	func	similar
+409d9d	UpdateRaceComplete	func	similar
+40a50e	RaceComplete	func	similar
+40aa00	AdvanceHudFrame	func	order
+40aa11	fill_speedo	func	similar
+40b449	DrawWeaponIcons	func	similar
+40b528	UpdateRaceHud	func	similar
+40bdb5	DrawRaceHud	func
+40d0c8	CalcPosition	func	similar
+40d4cc	AssignMedals	func	similar
+40d76b	copyInTempLapTimes	func	similar
+40d7ed	EndChallenge	func	exact
+40d858	DisplayRaceInfo	func	similar
+40dedd	AlterCheckPoint	func
+40e3c1	DisplayContinues	func	similar
+40e5ba	DoButton	func	similar
+40e68f	TickHUDMessage	func	exact
+40e6ad	DrawHUDMessage	func	exact
+40e6de	InitText	func	similar
+40e855	AddText	func	similar
+40e98e	AddNumber	func	similar
+40ead4	AddJustifyNumber	func	similar
+40ec6e	AddTime	func	similar
+40f0e7	CentreText	func	similar
+40f2b6	CentreText2	func	similar
+40f483	Print	func	similar
+40f645	PrintCX	func	similar
+40f899	InitPanelQuads	func	exact
+40f9a8	SetTextQuad	func	exact
+40fb40	GetAng	func	similar
+40fc52	scalar_product	func	similar
+40fc94	ScalarProduct	func	similar
+40fcc6	CrossProduct	func	exact
+40fd1b	MinusVector	func	exact
+40fd49	GetMagnitude	func	similar
+40fd82	arccos	func	exact
+40fddd	sar	func	exact
+40fe1b	ang	func	exact
+40fe4f	assign	func	exact
+40fe74	SetLocalRandom	func
+40fe9f	newRand	func	similar
+40ff10	InitParticleColours	func	similar
+4100e3	AsmDrawParticles	func	similar
+410d9f	UpdateParticles	func	similar
+410f60	InitSystem	func	similar
+410fef	InitMenuDisplay	func	exact
+411041	InitGameDisplay	func	order
+411091	InitSonyDisplay	func	exact
+4110e4	RaceFrameStart	func	similar
+4112d2	CallbackSwap	func
+4113a0	UpdateFrameAndPresent	func	similar
+411506	ResetFrameClock	func	exact
+411530	ClearVram	func	similar
+411682	BlockFill	func	exact
+411720	GetCameraFacing	func	similar
+41181b	DrawSectionObjects	func	similar
+4119b0	InitParticle	func	exact
+411a03	AddRandomParticles	func	similar
+411b5e	AddScrapingParticles	func	similar
+411cb9	AddSnow	func	similar
+411fe0	AddRain	func	similar
+4122fd	AddEboltParticles	func	similar
+412447	AddRisingParticles	func	similar
+4125b5	AddPitParticles	func	similar
+41271e	ClearParticleTable	func	exact
+412829	LoadExplodeGFX	func	similar
+4128f7	InitBirds	func	similar
+412d14	LoadBirdGFX	func	similar
+412de7	InitExplode	func	exact
+4130c6	UpdateExplode	func	similar
+41319a	DrawExplode	func	similar
+4137db	UpdateBirds	func	similar
+413bcc	DrawBirds	func	similar
+41404a	InitRing	func	exact
+414785	UpdateRing	func	exact
+414838	DrawRing	func	similar
+414fc2	AddSpurtExplode	func	exact
+4150f7	AddExplode	func	exact
+41522c	AddMinigunExplode	func	exact
+415360	AddSmallSpurtExplode	func	exact
+415495	AddSmallSmokeExplode	func	exact
+4155f1	AddSmokeExplode	func	exact
+41574c	AddRing	func	exact
+4157e7	DrawMissileFlare	func	similar
+416593	DrawRocketFlare	func	similar
+41734b	InitElectric	func	exact
+417433	AddElectric	func	similar
+4178d8	AddElectricStreak	func	similar
+418565	resetMiscFx	func	exact
+41858e	UnsetParticles	func	exact
+4185e0	AddEffects	func	similar
+4188ea	DrawEffects	func	similar
+418ba0	ResetStartBoom	func	ref1
+418bab	InitTrainLights	func	similar
+418e1d	DoNeonSign	func	similar
+419044	AnimateTexture	func	ref2
+41963e	WaterFall	func	similar
+4196bd	InitWaterFall	func	exact
+4196fe	ColourDroidLights	func
+419ab1	InitObject	func	similar
+419b3e	MoveAdvert	func	similar
+419ba2	MoveFan	func	similar
+419c06	InitMonoData	func	similar
+419d59	ResetAnimatedObjects	func	exact
+419d6e	ResetMonoRail	func	similar
+419def	ResetZeppelin	func	exact
+419e2d	LoadTrain	func	similar
+41a041	UpdateStartDroid	func
+41b004	DrawStartDroid	func
+41b1bc	LoadStartDroid	func	similar
+41b35d	InitDroidThings	func	similar
+41b675	ResetLightStart	func	similar
+41b824	UpdateLightStart	func	similar
+41bf2f	DrawLightStart	func	similar
+41c080	MoveMonoRail	func	similar
+41c1fd	DrawMonoRail	func	similar
+41c254	MoveZeppelin	func	similar
+41c37a	MoveCameraDroid	func	similar
+41c574	MoveRadar	func	similar
+41c5d9	DrawShadow	func	similar
+41d7ef	SetShake	func	exact
+41d802	ShakeScreen	func	similar
+41d92d	InitPitCycle	func	similar
+41db09	InitTrackCycle	func	similar
+41db82	RedBullAnimate	func	ref1
+41e3d0	InitCamera	func	similar
+41e48e	UpdateCameraRaceExternal	func	similar
+41e715	UpdateCameraRaceInternal	func	similar
+41e8c0	UpdateCameraRaceStart	func	similar
+41ec04	UpdateCameraAttractCircle	func	similar
+41ee90	UpdateCameraAttractMedal	func	similar
+41f010	UpdateCameraAttractDestroyed	func	similar
+41f1d0	UpdateCameraDroidView	func	similar
+41f3d0	UpdateCameraAttractInternal	func	similar
+41f590	UpdateCameraStaticFollow	func	similar
+41f6b0	UpdateCameraAttractMode	func	similar
+41f750	SetUnitFinVector	func	similar
+41f870	SetCameraForShip	func	similar
+41f8e0	doShipShipCollision	func	exact
+41f926	Ship2ShipCollision	func	ref1
+420182	collideLineToPlane	func	similar
+420e5e	Ship2TrackBase	func	exact
+420f96	DroneShip2TrackBase	func	similar
+421045	Ship2Track	func	similar
+4226c7	BeamCollideReaction	func	similar
+422811	NewWingCollision	func	similar
+4229af	WingCollision	func	similar
+422c44	NoseCollision	func	similar
+422e60	PlaneLineCollision	func	similar
+422ee7	Reflection	func	exact
+422f69	AngleOfCollision	func	similar
+423041	CheckPolygonCollision	func	similar
+4232c3	NewCollideLineToPlane	func	similar
+424120	Insert2DParticle	func	exact
+4241d8	Update2DParticle	func	exact
+4243b5	Init2DParticle	func	exact
+424513	Close2DParticle	func	exact
+4245d2	InitPop	func	similar
+42478f	DrawLine	func	exact
+42489f	DrawLineDepth	func	exact
+4249b2	DrawBox	func	exact
+424a65	VsyncFunc	func	similar
+425874	openwadfile	func	similar
+4259a7	openwadfilenvc	func	similar
+425ab6	closewadfilenvc	func	similar
+425ae8	closewadfile	func	similar
+425b1a	readnextfile	func	exact
+425b55	WDread	func	similar
+425c10	RestoreAmbientLoops	func	exact
+425d11	GetCdTrackName	func	similar
+425d2b	GetCdTrackArtist	func	similar
+425d45	CheckGamePause	func	similar
+425e59	PerformPauseOperations	func
+4261bc	DrawPauseMenu	func	similar
+426257	InGameReset	func	similar
+426686	DrawPauseOptions	func	similar
+426af9	InGameConfirm	func	similar
+426c29	DeSelectScreen	func	ref5
+426c34	UpdateMusicBar	func	similar
+426d4e	UpdateSfxBar	func	similar
+426e68	DrawMenuBox	func	exact
+426f70	AddRenderObject	func	similar
+427123	AddRenderSkeleton	func	exact
+4271df	ConvertMatrix	func	ref7
+427462	DrawRenderQueue	func	similar
+4289e1	ReleaseRenderMatrices	func	exact
+428a47	StartTransformBuffer	func	similar
+428ddc	FinishTransformBuffer	func	similar
+42937c	BuildQuads	func	ref1
+42a070	AsmLowResTile	func	exact
+42a1b4	AsmDefaultTile	func	similar
+42a33c	AsmMediumResTile	func	similar
+42a4e8	AsmHighResTile	func	similar
+42a67c	AsmGenerateTiles	func	similar
+42a7db	AsmNextFrame	func	exact
+42a7f8	DrawTrackSection	func	similar
+42b3a0	InitCredits	func	similar
+42c042	ShowCredits	func	similar
+42c160	SfxSoftMixInit	func	similar
+42c5bc	SfxInitReverbLow	func	similar
+42c63f	SfxReverbOnLow	func	order
+42c660	SfxReverbOffLow	func	exact
+42c686	SfxSetReverbDepthLow	func	exact
+42c6ac	SfxUnInitReverbLow	func	exact
+42c6d9	SfxSetMaxEffectsLow	func	exact
+42c716	SfxSoftTransEffect	func	similar
+42c922	SfxSoftFreeEffect	func	similar
+42ca8a	SfxSetCallBackLow	func	similar
+42cab8	SfxSoftPlay	func	similar
+42cccd	SfxSoftPlayId	func	similar
+42cf19	SfxSoftChainId	func	similar
+42d21b	SfxEffectKill	func	similar
+42d263	SfxEffectVolLow	func	similar
+42d2df	SfxEffectPitchLow	func	similar
+42d383	SfxEffectLRPanLow	func	similar
+42d410	SfxEffectFBPanLow	func	similar
+42d487	SfxEffectFlag	func	similar
+42d5d4	SfxFreeAll	func	similar
+42d677	SfxPauseLow	func	similar
+42d715	SfxContinueLow	func	similar
+42d7bd	SfxDoSfx	func	similar
+42ddfa	SfxUnInitLow	func	similar
+42df4e	AddItem	func	similar
+42e083	RemoveItem	func
+42e130	ExpandData	func	similar
+42e3e0	SetCameraPosition	func	exact
+42e42e	SetCameraDirection	func	similar
+42e723	MatrixMultiply	func	similar
+42e7f8	InitialiseAmbientColour	func	exact
+42e814	InitialiseColourMatrix	func	exact
+42e864	InitMatrix	func	exact
+42e8dd	InitialiseLightMatrix	func	exact
+42e92d	Normalise	func	similar
+42e9dd	DotProduct	func	exact
+42ea2e	MyCrossProduct	func	exact
+42ea4d	PreCalcNormals	func	similar
+42ee76	DrawEnvMap	func	similar
+430c10	FileLength	func	similar
+430c69	LoadFile	func	similar
+430d0e	SaveFile	func	exact
+430d70	SfxConvertSamples	func	ref3
+430df9	SfxDownmixSamples	func	ref3
+430e65	SfxConvertSamplesTo8Bit	func	ref3
+430ebe	SfxConvertSamplesToCompressed8Bit	func	ref3
+430f90	InitReverb	func	exact
+4312c5	UnInitReverb	func	exact
+43135c	SetReverbDepth	func	similar
+43137e	AddReverb	func	exact
+43138f	ClearReverbBuffers	func	exact
+4314b0	SfxInit	func	similar
+43188c	SfxCreateBuffer	func	similar
+431916	SfxInitReverb	func	exact
+431938	SfxReverbOn	func	ref2
+431948	SfxReverbOff	func	ref1
+431958	SfxSetReverbDepth	func	exact
+43196f	SfxUnInitReverb	func	order
+43197f	SfxSetMaxEffects	func	exact
+4319a0	SfxTransEffect	func	similar
+431b86	SfxFreeEffect	func	similar
+431bef	SfxSetVolume	func	similar
+431c59	SfxSetCdVolume	func	ref5
+431d00	SfxGetCdVolume	func	similar
+431d97	SfxSetCallBack	func	similar
+431dce	SfxPlay	func	similar
+431ead	SfxPlayId	func	similar
+431faf	SfxStop	func	similar
+432009	SfxEffectVol	func	similar
+432066	SfxEffectPitch	func	similar
+4320c8	SfxEffectLRPan	func	similar
+43213e	SfxEffectFBPan	func	similar
+4321cc	SfxEffectFlagSet	func	similar
+432236	SfxOn	func	order
+432257	SfxOff	func	exact
+432273	func_432273	func
+43227e	func_43227e	func
+432289	SfxTimerProc	func	similar
+4322f8	SfxUnInit	func	similar
+43236c	LoadFileAlloc	func	similar
+432404	SfxFileLength	func
+43245a	FindCdAuxDevice	func	similar
+4324d1	SfxHwMemAvailable	func	similar
+432530	Error	func	similar
+4325f0	UpdateWeapons	func	similar
+4326ac	DrawWeapons	func
+432752	InsertWeapon	func	ref3
+432f9d	FireWeapon	func	similar
+43305d	MissileLock	func	similar
+4331df	RearMissileLock	func	similar
+433318	initWeapons	func	similar
+433be8	BumpUp	func	similar
+433cba	BumpDown	func	similar
+433d8b	BumpFlatten	func	similar
+433e7f	FlattenTrack	func	similar
+433ed0	InitialiseBumps	func	similar
+4342bc	UpdateQuake	func	similar
+434914	UpdateMissile	func	similar
+43541d	DrawMissile	func	similar
+435458	InitMissile	func	similar
+435740	UpdateMinigun	func	similar
+435aee	InitMinigun	func	similar
+435fce	UpdateMine	func	similar
+436416	DrawMine	func	exact
+43648c	InitQuake	func	similar
+436680	InitPlasma	func
+436879	InitRocket	func	similar
+436ad8	InitRocketLeft	func	similar
+436e2a	InitRocketRight	func	similar
+437194	UpdateElecBolt	func	similar
+4379d2	DrawElecBolt	func	similar
+437a0d	InitElecBolt	func	similar
+437ca8	InitMine	func	similar
+437def	InitSmartBomb	func	similar
+437f5f	KillMines	func	similar
+43809a	UpdateSmartBomb	func	similar
+438534	DrawSmartBomb	func	similar
+43856f	InitShield	func	similar
+438806	UpdateShield	func	similar
+4398a2	DrawShield	func	similar
+439938	CycleWeaponGrids	func	similar
+439fc4	GetFireVector	func	exact
+43a13c	Weapon2Mine	func	similar
+43a285	GetNewWeapon	func	ref2
+43a7e6	GetNewDroneWeapon	func	similar
+43a9e0	UpdateRocket	func	similar
+43b2e8	DrawRocket	func	similar
+43b323	UpdatePlasma	func	similar
+43beb2	DrawPlasma	func	similar
+43bf07	DamageCollide	func	similar
+43c5fb	CheckPitShips	func	similar
+43c7f3	CheckPitShipsElectric	func	similar
+43c8e3	UpdateFadeScreen	func	similar
+43ca19	NoOp429ca0	func
+43ca24	FlipShip	func	similar
+43cadb	GetCheatWeapon	func	ref2
+43cc5c	randWep	func
+43ccb0	DoDetailKeys	func
+43d0be	SetBrake	func	exact
+43d1f3	SetFire	func	ref1
+43d647	SetDitch	func	similar
+43d6cd	GetMenuKey	func	similar
+43d7b3	InitJoystick	func	similar
+43d853	InitPadSettings	func	similar
+43d976	InitDirectInput	func	similar
+43dc54	ReleaseDirectInput	func	exact
+43dd04	func_43dd04	func
+43dd3c	PollKeyboard	func	ref3
+43f011	PollRaceControlInput	func
+4402e6	PollJoystick	func	ref1
+4403e0	gstEventInitQueue	func
+44049e	gstEventGetCount	func
+4404b3	gstEventEnqueue	func
+44054c	gstEventDequeue	func
+4405e1	gstDumpSync	func
+440898	HandleMakePlayer	func
+440920	HandleJoinPkt	func
+4409bb	gstHandleAsynch	func
+441060	gstHandleRestart	func
+441341	HandleEventPkt	func
+441497	race	func
+4453b4	gstPostLockstepEvent	func
+4454bf	gstEnumLockstepPlayers	func
+445bdd	InitNetworkRace	func
+44609c	StartRaceControlTimer	func
+4460f4	RaceControlTimer	func
+446a5b	gstShutdownNetworkRace	func
+446b49	InitResident	func	similar
+446d79	racetidy	func	exact
+446dad	TrackSpecificFunctions	func	similar
+44704b	LogMemoryStatus	func	exact
+447172	RaceFrameEnd	func	exact
+447190	IntelVertex	func	similar
+4471fc	IntelFace	func	similar
+4472a5	IntelSection	func	exact
+44749d	CheckVersion	func	exact
+447502	IndexToPointers	func	exact
+4475b8	WADInitVertices	func	exact
+44763b	WADInitFaces	func	exact
+4477ac	WADInitSections	func	exact
+447840	WADInitViewList	func	similar
+447a35	NextIndexSection	func	exact
+447a86	DrawNewTrack	func	similar
+44829d	DrawAllTrack	func	similar
+448498	DrawAllDirections	func	similar
+448c60	InterpolByte	func	similar
+448d00	DrawSync	func	ref16
+448d15	DrawSyncCallback	func
+448d20	ResetGraph	func	ref1
+448d35	SetGraphDebug	func	ref1
+448d4a	AddPrim	func	exact
+448d67	AddPrims	func	exact
+448d84	CatPrim	func	exact
+448d99	DumpClut	func
+448da4	DumpTPage	func
+448daf	GetClut	func	similar
+448dd0	GetTPage	func	ref7
+448e54	NextPrim	func	exact
+448e69	SetLineF2	func	exact
+448e7b	SetLineG2	func	exact
+448e8d	SetPolyF3	func	exact
+448e9f	SetPolyFT3	func	exact
+448eb1	SetPolyG3	func	exact
+448ec3	SetPolyF4	func	exact
+448ed5	SetPolyFT4	func	exact
+448ee7	SetPolyG4	func	exact
+448ef9	SetPolyGT4	func	exact
+448f0b	SetSemiTrans	func	similar
+448f47	SetShadeTex	func	similar
+448f83	SetSprt8	func	exact
+448f95	SetSprt16	func	exact
+448fa7	SetSprt	func	exact
+448fb9	SetTile1	func	exact
+448fcb	SetTile8	func	exact
+448fdd	SetTile16	func	exact
+448fef	SetTile	func	exact
+449001	TermPrim	func	exact
+449015	GetDispEnv	func	exact
+4490b2	SetDispMask	func	exact
+4490cf	GetDrawEnv	func	exact
+4491f7	SetDefDispEnv	func	exact
+449263	SetDefDrawEnv	func	exact
+449308	SetDrawEnv	func	exact
+4493d7	SetDrawMode	func	exact
+449418	LoadImage	func	similar
+449cac	MoveImage	func
+449cc1	StoreImage	func	ref1
+449cd6	ResetCallback	func	order
+449ce1	SetBlockFill	func	exact
+449cf3	SetPolyGT3	func	exact
+449d05	LoadClut4	func
+449d4b	LoadClut8	func
+449d94	LoadImage4	func
+449da9	LoadImage8	func
+449dbe	PutDispEnv	func
+449dc9	PutDrawEnv	func
+449de0	CdOpen	func	similar
+449e2f	CdControl	func
+449e41	CdControlF	func
+449e53	CdReadSync	func
+449e65	CdControlB	func	ref2
+449e77	CdCountTracks	func	similar
+449fe4	CdRead	func
+449ff6	CdGetToc2	func
+44a008	CdGetToc	func
+44a01a	CdSetDebug	func	ref1
+44a02c	CdPlayTrack	func	similar
+44a167	CdIsDoorOpen	func	similar
+44a1e4	CdPause	func	similar
+44a23b	CdPlay	func	similar
+44a29b	CdIsActive	func	similar
+44a32d	CdClose	func
+44a361	CdReadTrackTable	func
+44a7b5	CdValidate	func
+44a7d9	CdStop	func	ref1
+44a830	gstDebugWriteText	func
+44a90d	gstDebugPrintf	func
+44ab00	main	func
+44ba78	TitleScreen	func
+44be17	RunMenus	func	similar
+44be87	StartRace	func
+44c5eb	ShowCopyrightScreen	func	similar
+44c7ca	LoadTitleScreen	func	similar
+44c96c	ClearScreens	func	similar
+44ca00	DrawFlare	func	similar
+44d60a	InitTrails	func	similar
+44e04a	NewTrailSegment	func	similar
+44e31b	BuildOwnShipTrail	func	similar
+44e8bb	DrawTrail	func	similar
+44fdb9	UpdateTarget	func	ref1
+4506d4	DrawShipTrails	func	similar
+450c0e	UpdateShipTrails	func	similar
+450e99	InitPlasmaShot	func	similar
+450ff2	NewPlasmaSeg	func	exact
+4512a2	NewPlasmaSegment	func	ref1
+451614	DrawFlashNozzle	func	similar
+452700	EnterNetworkMenu	func
+452776	MenuControl	func	similar
+453a69	CopyGameData	func	ref7
+454587	InitDefaultName	func	similar
+4545df	InitMenuBars	func	exact
+454678	InitMenuBackground	func	ref1
+454bfd	DispHiScores	func	similar
+45552b	InitNewDisplay	func	order
+45557b	DisplayConfig	func	similar
+4559a7	SelectController	func	similar
+455d9a	RedefineController	func	similar
+456aba	CheckControlConflicts	func	exact
+456c46	LoadSave	func	similar
+45765a	GetKeyboardChar	func	similar
+4576fe	LoadSaveSlot	func	exact
+457729	StoreSaveSlot	func
+457817	ReadSaveFile	func	ref2
+4579c3	InitDefaultSlot	func
+457a08	StoreProgress	func
+457b31	RestoreProgress	func
+457c61	AudioConfig	func	similar
+458470	ShipParameters	func	similar
+45890a	TeamSelect	func	similar
+458d85	ClassSelect	func	similar
+4596db	gstChangePlayerName	func
+45971b	gstPostSessionAsynch	func
+459775	gstPostLockstepAsynch	func
+4597cb	gstGetLevelBlock	func
+45b0c5	JoinSessionClient	func
+45b555	gstEnumLS	func
+45b5c1	gstEnumLS_Callback	func
+45b715	gstSendCommand	func
+45b75d	gstJoinLockstep	func
+45b7e3	gstLockstepGPI_Callback	func
+45b83c	gstJoinSessionGPI_Callback	func
+45b980	doSessionJoinMenu	func
+45c512	gstEnumSessions_Callback	func
+45c71e	doLobbyMenu	func
+45ca29	gstBuildLevelBlock	func
+45d7ee	gstPostLevelBlock	func
+45d880	RunMenuScreen	func	similar
+45da06	doNetworkOptionsMenu	func
+45e3d1	doSessionConfigMenu	func
+45efe5	JoinSessionServer	func
+45f2ad	doTournamentMenu	func
+45f85d	AddTextBits	func
+45fe5d	FlushMessages	func	exact
+45fedc	NormaliseMenuBoxes	func	ref1
+4603fb	ShowMenu	func	ref1
+462df3	LoadMenuLineData	func	similar
+462f27	InitLineEditor	func	order
+462f32	InitMenus	func	ref1
+464b04	InitMenuBackdropPolys	func	similar
+464bc8	DrawMenuOptionBackdrop	func
+464df7	EnterName	func	similar
+46507f	GetTrackName	func	exact
+4652cd	LoadMenuImage	func	similar
+4654ba	LoadModel	func	ref2
+4655bb	LoadMenuModel	func	ref1
+465767	DrawTeamShips	func	similar
+4658cf	InitMenuFills	func	exact
+46591f	DrawMenuInitBanner	func
+4659d2	InitMenuState	func
+465b16	InitGameData	func
+465d77	SetupUnlocks	func	ref2
+465f34	ClearUnlocks	func
+466026	InitSlider	func
+466060	SlideScreen	func	ref1
+46665e	DrawMenuBackPolys	func
+4666fc	InitMenuBackPolys	func	ref1
+466e9f	LoadConfig	func
+467118	SaveConfig	func
+4673e0	ShipTrkReaction	func	similar
+46848b	getWorldPoint	func	similar
+4685a5	GetTargetPos	func	similar
+4687a0	SetUnitVectors	func	similar
+468c12	SetTrackAttributes	func	similar
+468f40	ScoreTabInit	func	similar
+4694e0	InitScoreTabData	func	similar
+469571	CheckForHiScore	func	similar
+469803	EnterHighScoreIfNeeded	func
+469873	DisplayScoreTab	func	ref1
+469ac0	EnterHighScore	func
+469fc5	DrawHallOfFame	func
+46a150	SceneRadiusCheck	func	ref2
+46a8a0	SfxBuildMixTables	func	ref1
+46aac0	SfxMixBasic	func	similar
+46ad8a	MixStereoSfxSamples	func	similar
+46b1ab	SfxMixerLut	func	similar
+46bb5f	SfxMixFourChannel	func	similar
+46c262	SfxFreeMixTables	func	exact
+46c2dc	SfxBuildQuantTable16	func
+46c4ee	SfxBuildQuantTable8	func
+46c674	SfxBuildPanTable	func
+46c7ab	func_46c7ab	func
+46c8ce	func_46c8ce	func
+46ca8d	SfxDumpMixedSamples	func	similar
+46cbb0	SoundDriverNoOp	func
+46cbc0	SoundDriverReturnsOneA	func
+46cbd5	SoundDriverReturnsZeroA	func
+46cbe7	SoundDriverReturnsZeroB	func
+46cbf9	SoundDriverReturnsOneB	func
+46cc0e	SoundDriverReturnsZeroC	func
+46cc20	SoundDriverReturnsZeroD	func
+46cc32	SoundDriverReturnsInput	func	order
+46cc45	SoundDriverReturnsSecondInput	func	exact
+46cc58	SoundDriverReturnsOneC	func
+46cc6d	UsesAlternateTexturePageLayout	func
+46cc7f	SoundDriverReturnsZeroE	func
+46cc91	SoundDriverNoOp2	func
+46cca0	InitMenuQuadBatch	func
+46cdc1	UpdateMenuQuadBatch	func
+46d100	SfxDirectInit	func	ref1
+46d2b2	SfxDirectLoadSample	func	similar
+46d591	SfxDirectFreeEffect	func	similar
+46d703	SfxDirectSetCallback	func	similar
+46d731	SfxDirectPlay	func	similar
+46d998	SfxDirectPlayId	func	similar
+46dc44	SfxDirectRejectRequest	func	similar
+46dc7a	SfxDirectStop	func	similar
+46dd4c	SfxDirectSetVolume	func	similar
+46dde7	SfxDirectSetPitch	func	similar
+46de97	SfxDirectSetPan	func	similar
+46df32	func_46df32	func
+46df51	SfxDirectSetFlag	func	similar
+46e020	func_46e020	func
+46e02b	SfxDirectOff	func	ref1
+46e036	func_46e036	func
+46e041	func_46e041	func
+46e04c	SfxDirectService	func	similar
+46e1a1	SfxDirectUnInit	func	similar
+46e31d	SfxDirectFindFreeSlot	func
+46e370	SectionSearch	func	similar
+46e63e	FindNearestSection	func	similar
+46e880	LoadTexture	func	similar
+46ef20	IntelPrim	func	similar
+46f707	IntelLong	func	exact
+46f755	IntelShort	func	exact
+46f785	LoadPrmCommon	func	ref2
+47b739	FreePrm	func	ref9
+47b772	WADLoadPrm	func	exact
+47b794	LoadPrm	func	exact
+47b7b6	NewInstance	func	similar
+47b8e0	InitScene	func	similar
+47bb53	WADInitScene	func	similar
+47bd31	getPath	func	exact
+47bdf4	LoadCmpFiles	func	similar
+47bea0	GhostLoadCmpFiles	func	exact
+47bf4c	NewLoadTexture	func	similar
+47c53c	LoadCompressedTextureSequence	func	similar
+47c709	WADLoadCompressedTextureSequence	func	similar
+47c870	LoadTtfFile	func	similar
+47c9d6	WADLoadTtfFile	func	similar
+47cad0	DrawShips	func	similar
+47cff2	AddShipRenderObjects	func	similar
+47d25c	CopySharkVerts	func	similar
+47d414	UpdateSharkModel	func	similar
+47d509	UpdateSharkFeet	func	similar
+47d5c9	loadShipData	func	ref1
+47dc0a	initShipData	func	ref1
+47eed3	SetSpread	func	similar
+47f060	AddBlit320	func	exact
+47f2f3	AddBlit640Shifted	func	similar
+47f5d1	AddBlit640	func	similar
+47f876	AddFill	func	exact
+47fa48	FlushBlitQueue	func	similar
+47fc78	LoadPPMSurface	func	similar
+4802b7	LoadBMPSurface	func	similar
+480771	ReleaseSurfaces	func	exact
+4807e0	UpdateRescueDroid	func	similar
+480c95	UpdateDroidStart	func	similar
+48101a	UpdateDroidCircle	func	similar
+48131b	UpdateDroidRescue	func	similar
+48146b	SetDroidVectors	func	similar
+4815c9	DrawRescueDroid	func	exact
+4815f6	InitRescueDroid	func	exact
+481740	NewSkeleton	func	similar
+4817b0	SetSkeletonPosition	func	similar
+4817e0	SetSkeletonDirection	func	ref22
+481970	SetSkeletonDirectionHRP	func	similar
+481b00	SetSkeletonDirectionHPR	func	ref15
+481c90	SetSkeletonDirectionRPH	func	ref2
+481e20	GetSkeletonMatrix	func	ref7
+481ee0	SetSkeletonTransform	func	similar
+481f10	SetSpeedUpFaceTexture	func	similar
+481fc2	SetBoostFaceTexture	func	similar
+4820a2	InitTrackTextures	func	similar
+4822ec	InitCheckPoints	func	similar
+482522	InitInGameMenu	func	exact
+482848	InitWeaponGrids	func	similar
+482ba1	InitAttractMode	func	similar
+482c58	myrand	func	exact
+482c92	InitShufflePlay	func	similar
+482db6	InitCDAudio	func	similar
+482e41	InitRaceData	func	exact
+482e88	InitRaceResetData	func	exact
+482ed1	InitRaceLine	func	similar
+483630	ratan2	func	similar
+483665	CreateSineTable	func
+4836b0	rsin	func	similar
+48374a	rcos	func	similar
+4837cf	lnFOG	func	similar
+48386a	ApplyMatrixCC	func	similar
+483973	AverageZ3CC	func	similar
+4839c9	AverageZ4CC	func	exact
+4839ee	ColorCol	func	similar
+483b16	ColorDpq	func	similar
+483c55	ColorMatCol	func	similar
+483efb	ColorMatDpq	func	similar
+484199	csqrt	func	similar
+4841d2	DpqColor	func	exact
+484249	DpqColor3	func	exact
+4843df	DpqColorLight	func	exact
+484497	FlipRotMatrixX	func	similar
+4844db	FlipTRX	func	similar
+484509	gteMIMefunc	func	exact
+4845b2	InitGeom	func	exact
+484754	Intpl	func	exact
+4847e6	InterpolShort	func	similar
+4848ba	InvSquareRoot	func	similar
+484919	LightColor	func	similar
+484a0d	LoadAverage0	func	exact
+484a69	LoadAverage12	func	exact
+484ace	LoadAverageShort0	func	similar
+484b33	LoadAverageShort12	func	similar
+484ba1	LocalLight	func	similar
+484c98	Lzc	func	similar
+484cea	MulMatrix	func	similar
+484f67	MulMatrix0	func	similar
+4851e4	MulMatrix2	func	similar
+485461	NormalClip	func	similar
+4854de	NormalColor	func	order
+4854e9	NormalColor3	func	similar
+485917	NormalColorCol	func	similar
+485aea	NormalColorCol3	func	similar
+486047	NormalColorDpq	func	similar
+486231	NormalColorDpq3	func	similar
+486820	OuterProduct0	func	exact
+48688c	OuterProduct12	func	exact
+486901	PopMatrix	func	similar
+48693e	PushMatrix	func	similar
+48697b	ReadColorMatrix	func
+486995	ReadLightMatrix	func	similar
+4869af	ReadRGBfifo	func	exact
+486a1a	ReadRotMatrix	func	order
+486a34	ReadSXSYfifo	func	similar
+486a5d	ReadSZfifo3	func	similar
+486a86	ReadSZfifo4	func	exact
+486ab9	RotAverage3	func	similar
+487126	RotAverage4	func	similar
+48798b	RotAverageNclip3	func	similar
+48800b	RotAverageNclip4	func	similar
+48888e	RotAverageNclipColorCol3	func	similar
+488ee9	RotAverageNclipColorDpq3	func	similar
+48958d	RotColorDpq	func	similar
+4899ed	RotColorDpq3	func	similar
+48a075	RotColorMatDpq	func	similar
+48a569	RotMatrix	func	ref1
+48a820	RotMatrixC	func	exact
+48a840	RotNClip3	func	exact
+48a885	RotNClip4	func	exact
+48a8d2	RotTrans	func	similar
+48a9d4	RotTransPersForN	func	similar
+48aa91	RotTransPersN	func	similar
+48ab19	RotTransPers	func	similar
+48abd9	RotTransPers3	func	similar
+48b1ea	RotTransPers4	func	similar
+48ba44	SetBackColor	func	order
+48ba67	SetColorMatrix	func	order
+48ba81	SetFarColor	func	order
+48baa4	SetFogFar	func	exact
+48bac7	SetFogNear	func	similar
+48bae5	SetGeomOffset	func	exact
+48bb00	SetGeomScreen	func	exact
+48bb1d	SetLightMatrix	func	order
+48bb37	SetRotMatrix	func	similar
+48bb68	SetTransMatrix	func	ref2
+48bb91	Square0	func	exact
+48bbda	Square12	func	exact
+48bc2c	SquareRoot0	func	similar
+48bc5f	SquareRoot12	func	similar
+48bcba	SubPol3	func
+48bcc5	SubPol4	func
+48bcd0	TransMatrix	func	exact
+48bd06	VectorNormal	func	similar
+48be00	ApplyMatrix	func	similar
+48befd	AverageZ3	func	similar
+48bf40	AverageZ4	func	similar
+48bf6d	RotTransPersV	func	similar
+48c140	UpdateDroneShipStart	func	similar
+48c22c	UpdateDroneShip	func	similar
+48e20d	moveDownCentre	func	exact
+48e235	followRaceLine	func	similar
+48e2d5	lookForWayPast	func	similar
+48e4bc	calcMyXPos	func	ref3
+48e742	goRight	func	similar
+48e810	goLeft	func	similar
+48e8de	getShipInfrontLAP	func	similar
+48e9b9	getShipBehindLAP	func	similar
+48ea97	humanToDroneSpeed	func	similar
+48eb40	AddConnectionListEntry	func
+48ec5c	RGBToPixel	func	similar
+48ecc0	SetScaledFloatScreenVertex	func
+48ee00	SetScaledScreenVertex	func	ref8
+48ef4c	SetScreenVertex	func	similar
+48f054	SetupDialogProc	func	similar
+48f0c6	WndProc	func
+48f65b	InitNetwork	func
+48f7b0	DefaultPacketHandler	func
+48f7f5	ErrorFunctionHandler	func
+48f84e	func_48f84e	func
+48f8aa	func_48f8aa	func
+48f8e1	func_48f8e1	func
+48f9b0	gstConnectGPI_Callback	func
+48fa28	gstInitGPI_Callback	func
+48fbd5	DisplayOptionsProc	func	similar
+48fda8	AdvancedDisplayProc	func	similar
+48fe61	WinMain	func
+490a8f	CreateSetupWindow	func
+490c3e	ShutdownGame	func
+490eda	PresentRenderFrame	func	similar
+4913a9	ReadGameCommandLineOptions	func
+491422	LoadBitmapData	func	similar
+4915fd	ShowMessage	func	similar
+49165f	FlushRenderQueues	func	similar
+4916be	FlushTimedRenderQueues	func
+491789	GetTextureColour	func	similar
+4917f6	LoadImageStub	func	ref11
+492ffc	ClearResultAndReturnOne	func	similar
+493083	DDErrorString	func	exact
+493b2e	CreateDirectDrawObjects	func	similar
+4941aa	ReleaseDirectDrawObjects	func	similar
+494281	CreateDirect3DDevice	func	similar
+495566	ReleaseRendererObjects	func	similar
+49574e	EnumTextureFormatCallback	func	ref1
+495c7a	SetPixelShifts	func	ref1
+495e08	ReportDDError	func	exact
+495e53	ProcessSetupMessages	func	similar
+495f67	SetCodeSectionReadWrite	func	similar
+49604e	GetPixelChannels	func	ref5
+49625f	SaveScreenshot	func
+49635c	PlayMovie	func	exact
+496406	ClearBackBufferForTextureMode	func
+496437	ClearBackBufferRect	func	similar
+4964f5	ClearBackBufferToBlack	func	similar
+496546	FadeScreenToBlack	func	similar
+4969e2	SetAssetDirectories	func
+496d84	LoadInstallPaths	func	similar
+496f70	LoadBitmapTextures	func	similar
+497732	EnumerateDisplayDrivers	func	similar
+497aaf	InitDirectDrawDriver	func	similar
+497b7c	EnumDriverCallback	func	similar
+497f39	EnumDeviceCallback	func	similar
+498312	EnumDisplayModesCallback	func	similar
+49848f	Load16BitBitmapTextures	func	similar
+498d03	CreateSetupControls	func	similar
+4991cc	UpdateSetupDisplayOptions	func	similar
+499429	DestroySetupControls	func
+4994cd	SelectedResolutionIndex	func	similar
+4995b8	CreateDisplayOptionsWindow	func	similar
+499962	FillDisplayComboBoxes	func	similar
+499afd	DestroySetupScreen	func
+499b9c	ConvertTexturePage	func	similar
+49a480	SetDefaultPalette	func	similar
+49a4df	DrawWindowBitmap	func	similar
+49a59e	FindNearestColourIndex	func	similar
+49a72a	GetProfileTime	func	ref11
+49a77e	BenchmarkMagnitude	func	similar
+49a838	CreateTexturePages	func	similar
+49b19f	ClearBackBufferWithFade	func	similar
+49b24f	FillFadeRampSurface	func	similar
+49b59d	LogDXError	func	ref105
+49b74b	SetDirectXDirectory	func
+49b7cd	FileAccessError	func	ref14
+49b9dc	InitSetupBackground	func	exact
+49ba51	CheckPVRTextureSupport	func	similar
+49bbd1	CreatePvrCommandSurface	func	similar
+49bdcf	SetPvrCommandBusy	func	similar
+49be3b	SetPvrCommandReady	func	similar
+49bea7	ReleasePvrCommandSurface	func	exact
+49befa	KeyboardHookProc	func	similar
+49bff7	HasMMX	func	similar
+49c060	UpdateShips	func	similar
+49c2dd	SortAllShips	func	similar
+49c735	UpdateShipStart	func
+49c8d2	UpdateRacingShip	func
+49cf2d	UpdatePlayerShipStart	func	similar
+49d0f3	UpdatePlayerShip	func	similar
+49d779	SetUpFirstCheckPoint	func	similar
+49d906	GeneralStartProcs	func	similar
+49da20	iso_init	func	exact
+49da32	iso_open	func	similar
+49dadf	SeekFile	func	exact
+49db0f	ReadFileBytes	func	similar
+49db35	WriteFileBytes	func	similar
+49db5b	iso_close	func	exact
+49db80	iso_read	func
+49db92	IsoDiscNoOp	func
+49db9d	iso_toc	func
+49dbaf	iso_filesize	func
+49dbc1	iso_fileloc	func
+49dbd3	my_error_handler	func
+49dbde	PutDispEnvStub	func	ref6
+49dbf1	PutDrawEnvStub	func	ref2
+49dc04	DrawPrim	func	ref4
+49dc10	InitDynamicMem	func	similar
+49dc68	DAlloc	func	similar
+49ddec	DFree	func	similar
+49deec	DirectSoundCreate	lib
+49df00	PlayMpegMovie	func	exact
+49e12d	mpegStopPlayback	func	ref2
+49e140	mpegPlayStream	func	exact
+49e3ae	mpegInitOutputFormat	func	exact
+49e498	mpegDrawFrame	func	similar
+49e8fb	mpegHeapAlloc	func	exact
+49e936	mpegYCbCrToRGB	func	exact
+49ea01	mpegInitColourTables	func	similar
+49eef9	mpegYCbCrToClampedRGB	func	similar
+49f018	mpegBuildDisplayPalette	func	similar
+49f2d5	mpegLockSurface	func	exact
+49f34e	mpegUnlockSurface	func	exact
+49f376	MpegDitherToPalette	func	exact
+49f586	mpegDrawDithered	func	similar
+49f750	mpegAbortPlayback	func	exact
+49f765	mpegInitVideoStream	func	exact
+49fba0	mpegDecodeStream	func	exact
+4a00c1	mpegReadSequenceHeader	func	exact
+4a0baa	mpegReadExtensionsAndUserData	func	exact
+4a14ec	mpegReadGroupHeader	func	exact
+4a1cb3	mpegReadPictureHeader	func	exact
+4a27ad	mpegDecodePicture	func	exact
+4a2c91	mpegDecodeSlice	func	exact
+4a36ad	mpegDecodeIntraMacroblock	func	exact
+4a3aef	mpegDecodePredictedMacroblock	func	exact
+4a4baf	mpegDecodeBidirectionalMacroblock	func	similar
+4a704d	mpegPresentQueuedFrame	func	similar
+4a71a9	mpegStartAudioQueue	func	exact
+4a722f	mpegStopAudioQueue	func	exact
+4a7251	mpegAudioBlockPlayed	func	order
+4a7262	mpegFrameTimerCallback	func	exact
+4a7310	mpegInitializeVlcTables	func	exact
+4a7420	mpegBuildVlcLookupTable	func	exact
+4a7673	mpegRestoreCodedBlockPatternCodes	func	exact
+4a7710	mpegOpenVideoStream	func	exact
+4a77e3	mpegCloseVideoStream	func	exact
+4a77fe	mpegReadVideoStreamChunk	func	exact
+4a788b	mpegRefillVideoStreamBuffer	func	exact
+4a7910	mpegBuildDecodeJumpTable	func	similar
+4a7e60	mpegBuildClipScaleTables	func	exact
+4a8070	mpegDebugMessage	func	ref29
+4a807b	mpegDebugFunctionEnter	func	exact
+4a80bc	mpegDebugFunctionLeave	func	exact
+4a80f0	mpegInitAudioQueue	func	exact
+4a82f7	mpegResetAudioBlockQueue	func	exact
+4a83a5	mpegSetAudioBlockCallback	func	order
+4a83d3	mpegQueueAudioData	func	exact
+4a8558	mpegCountReadyAudioBlocks	func	exact
+4a85b1	mpegStartAudioPlayback	func	exact
+4a85ed	mpegStopAudioPlayback	func	exact
+4a8614	mpegAudioTimerCallback	func	similar
+4a87a4	mpegDecodeAudioFrames	func	exact
+4a8906	mpegBuildVolumeTable	func	exact
+4a8a6c	DirectDrawCreate	lib
+4a8a72	DirectDrawEnumerateA	lib
+4a8a80	gstDecodeBytes	func
+4a8b1b	gstDecodeU16Array	func
+4a8c02	gstDecodeS16Array	func
+4a8ce7	gstDecodePackedU32Array	func
+4a8e81	gstDecodePackedS32Array	func
+4a9054	gstDecodePackedU24Array	func
+4a91d6	gstDecodeU8	func
+4a9263	gstDecodeU16	func
+4a9321	gstDecodeS16	func
+4a93dd	gstDecodePackedU32	func
+4a9561	gstDecodePackedS32	func
+4a971e	gstDecodePackedU24	func
+4a988a	gstEncodeBytes	func
+4a9978	gstEncodeU16Array	func
+4a9a8c	gstEncodeS16Array	func
+4a9b9c	gstEncodePackedU32Array	func
+4a9dca	gstEncodePackedS32Array	func
+4aa01c	gstEncodePackedU24Array	func
+4aa238	gstEncodeU8	func
+4aa2d7	gstEncodeU16	func
+4aa38b	gstEncodeS16	func
+4aa440	gstEncodePackedU32	func
+4aa60e	gstEncodePackedS32	func
+4aa800	gstEncodePackedU24	func
+4aa9c0	gstErrorString	func
+4aaa51	gstFunctionName	func
+4aab1f	gstAddRequest	func
+4aabe3	gstLobbyGPI	func
+4aacb6	gstEnumProvidersGPI	func
+4aadca	gstInitGPI	func
+4aafaa	gstReleaseBuffers	func
+4ab008	gstConnectGPI	func
+4ab08a	gstDisconnectGPI	func
+4ab0dd	gstEnumSessionsGPI	func
+4ab15f	gstCreateSessionGPI	func
+4ab21c	gstJoinSessionGPI	func
+4ab2d9	gstCheckInitialised	func
+4ab315	gstNewUpPacket	func
+4ab393	gstExitSessionGPI	func
+4ab41a	gstEnumLockstepGPI	func
+4ab48a	gstJoinLockstepGPI	func
+4ab51f	gstNewEventUpPacketGPI	func
+4ab59d	gstNewLockstepUpPacket	func
+4ab617	gstExitLockstepGPI	func
+4ab69e	gstSendChatGPI	func
+4ab708	gstSendCommandGPI	func
+4ab75f	gstIDRequestGPI	func
+4ab7c7	gstSendUpPacketGPI	func
+4ab84c	gstReturnSuccess	func
+4ab86b	gstConnectNet	func
+4abe28	gstEncodeTitle	func
+4ac3d1	gstEncodeCampaignRequest	func
+4ac455	gstDisconnectNet	func
+4ac65a	gstEncodeDisconnect	func
+4ac695	gstEnumSessionsNet	func
+4accd9	gstEncodeSessionQuery	func
+4acda8	gstCreateSessionNet	func
+4ad0b9	gstEncodeSessionCreate	func
+4ad2a9	gstJoinSessionNet	func
+4ad587	gstEncodeSessionJoin	func
+4ad6ac	gstNewUpPacketNet	func
+4ad7f2	gstExitSessionNet	func
+4ada0b	gstEncodeSessionExit	func
+4ada90	gstEnumLockstepNet	func
+4ae46b	gstEncodeQueryTerm	func
+4ae4f2	gstEncodeByteList	func
+4ae57f	gstJoinLockstepNet	func
+4ae9ea	gstEncodeLockstepJoin	func
+4aeab6	gstEncodeLockstepJoinAck	func
+4aeba5	gstNewEventUpPacketNet	func
+4aecb3	gstNewLockstepUpPacketNet	func
+4aedfa	gstExitLockstepNet	func
+4aeeca	gstSendChatNet	func
+4af030	gstSendCommandNet	func
+4af1ea	gstIdRequestNet	func
+4af280	gstReportError	func
+4af2ca	gstIsInitialised	func
+4af2f0	gstTestFlag	func
+4af318	gstSdkErrorString	func
+4af4fd	gstSdkFunctionName	func
+4af654	gstRegisterUserErrors	func
+4af6c0	gstRegisterUserFunctions	func
+4af72c	gstRegisterErrorCallback	func
+4af771	gstRegisterUserAlloc	func
+4af7ae	gstRegisterUserFree	func
+4af7eb	gstRegisterStatusCallback	func
+4af80f	gstRegisterUserDelay	func
+4af847	gstRegisterUserClock	func
+4af884	gstRegisterCancelCallback	func
+4af8a8	gstRegisterDebugPrint	func
+4af8cc	gstInitSDK	func
+4af95d	gstExitSDK	func
+4af994	gstInitialise	func
+4af9d5	gstDial	func
+4afa0f	gstHangup	func
+4afa49	gstAllocUpPacket	func
+4afab9	gstSendEncodedUpPacket	func
+4afb1c	gstFreeUpPacket	func
+4afb82	gstGetDownPacket	func
+4afbee	gstFreeDownPacket	func
+4afc4a	gstRequestAllPackets	func
+4afcb4	gstRequestSpecificPackets	func
+4afd98	gstTriggerHandler	func
+4afe02	gstRegisterDebugPacketHandler	func
+4afe45	gstRegisterDefaultPacketHandler	func
+4afeaf	gstRegisterSpecificPacketHandler	func
+4aff93	gstRegisterPolledPackets	func
+4b0077	gstModemCommand	func
+4b037d	gstModemWaitFor	func
+4b04ee	gstGetUserId	func
+4b0503	gstGetGameName	func
+4b0520	gstDefaultAlloc	func
+4b053c	gstDefaultFree	func
+4b0551	gstDefaultSleep	func
+4b0566	gstDefaultGetTime	func
+4b057c	gstVxdOpen	func
+4b0986	gstVxdCreateEvents	func
+4b0b08	gstVxdStartThread	func
+4b0b9f	gstVxdThreadProc	func
+4b0d25	gstDispatchDownPacket	func
+4b0ddb	gstVxdClose	func
+4b0e9c	gstVxdFreeEvents	func
+4b0f40	gstVxdStopThread	func
+4b0ff2	gstVxdFreeDownPacket	func
+4b106f	gstVxdInstallDriver	func
+4b1142	gstVxdPutChar	func
+4b11cc	gstVxdGetChar	func
+4b1277	gstVxdRelease	func
+4b130b	gstVxdDial	func
+4b1997	gstVxdHangup	func
+4b19fa	gstVxdAllocUpPacket	func
+4b1a5d	gstVxdSendUpPacket	func
+4b1abe	gstVxdFreeUpPacket	func
+4b1b1f	gstVxdGetDownPacket	func
+4b1ccc	gstVxdRequestAll	func
+4b1d2c	gstVxdRequestSpecific	func
+4b1da6	gstVxdUnsupported	func
+4b1dc8	gstVxdSetDefaultHandler	func
+4b1e44	gstVxdSetHandler	func
+4b1ed8	gstVxdSetPolled	func
+4b1f6f	gstVxdSetPollHandler	func
+4b2003	gstVxdSetEnabled	func
+4b209a	gstVxdWaitPacket	func
+4b20ec	gstVxdReset	func
+4b218c	gstVxdQueryCommand0	func
+4b21fc	gstVxdGetLastError	func
+4b226c	gstVxdGetStatusBits	func
+4b242b	gstVxdReadRegister	func
+4b24ad	gstVxdReadByte	func
+4b2550	gstPeerLog	func
+4b25e5	gstReleaseQueue	func
+4b2668	gstClearQueue	func
+4b26ae	gstCreateQueue	func
+4b276d	gstInitQueue	func
+4b2797	gstQueueAcquire	func
+4b293d	gstPeerClose	func
+4b2b75	gstPeerReset	func
+4b2c1d	gstPeerOpen	func
+4b3055	gstPeerThread	func
+4b3371	gstPeerReceive	func
+4b388f	gstPeerAllocRecv	func
+4b3955	gstPeerReleaseRecv	func
+4b39af	gstQueueRelease	func
+4b3ad0	gstPeerDeliver	func
+4b3dd7	gstPeerResend	func
+4b3f15	gstPeerReleaseSend	func
+4b3f6c	gstPeerAcknowledge	func
+4b4121	gstPeerAllocSend	func
+4b41e0	gstPeerSend	func
+4b4389	gstPeerDropPlayer	func
+4b45fc	gpiBroadcastNoHost	func
+4b464c	gpiConnectLobby	func
+4b48b3	gpiEnumProviders	func
+4b490f	gpiProviderFound	func
+4b4986	gpiInit	func
+4b4d15	gpiSystemMessage	func
+4b4faa	gpiDispatchPacket	func
+4b504b	func_4b504b	func
+4b510b	gpiConnect	func
+4b5171	func_4b5171	func
+4b51e3	gpiEnumSessions	func
+4b52cf	func_4b52cf	func
+4b5411	gpiCreateSession	func
+4b568d	gpiJoinSession	func
+4b59cf	func_4b59cf	func
+4b5a05	func_4b5a05	func
+4b5a75	_set_new_handler	func	similar
+4b5a8a	func_4b5a8a	func
+4b5c75	gpiJoinLockstep	func
+4b5cd9	func_4b5cd9	func
+4b5d4a	func_4b5d4a	func
+4b5f1d	gstCheckGPIReady	func
+4b5f53	gpiSendUnreliable	func
+4b5fa2	func_4b5fa2	func
+4b6075	gpiUnsupportedPutChar	func
+4b6097	gpiUnsupportedGetChar	func
+4b60b9	gpiUnsupportedRelease	func
+4b60db	gstDialGPI	func
+4b60fd	gstHangupGPI	func
+4b611f	gpiAllocUpPacket	func
+4b6173	gpiSendUpPacket	func
+4b61c2	gpiFreeUpPacket	func
+4b6209	gpiGetDownPacket	func
+4b6337	gpiFreeDownPacket	func
+4b637e	gpiUnsupportedRequestAll	func
+4b63a0	gpiUnsupportedRequestSpecific	func
+4b63c2	gstRegisterLockstepCallback	func
+4b63e4	gpiSetDefaultHandler	func
+4b642d	gpiSetTagHandler	func
+4b647a	gpiSetPolledTags	func
+4b64c7	gpiSetTagPollHandler	func
+4b6514	gpiSetEnabledTags	func
+4b6561	gpiUnsupportedWait	func
+4b6590	gstDispatchInit	func
+4b6637	gstQueueCreate	func
+4b66a5	gstQueueDestroy	func
+4b66ed	gstQueueReset	func
+4b6715	gstDispatchFlush	func
+4b679b	gstQueueClear	func
+4b67b9	gstQueuePop	func
+4b6823	gstDispatchShutdown	func
+4b68a3	gstDispatchSetDefault	func
+4b68ca	gstDispatchSetHandler	func
+4b6971	gstDispatchSetPolled	func
+4b69fe	gstDispatchSetPollHandler	func
+4b6aa5	gstDispatchSetEnabled	func
+4b6b32	gstDispatchLookup	func
+4b6d4b	gstQueuePush	func
+4b6dd1	gstDispatchGetPolled	func
+4b6e30	gstIniLoad	func
+4b6fff	gstIniNew	func
+4b707b	gstIniStripNewline	func
+4b70e8	gstIniLoadFile	func
+4b72ab	gstIniFree	func
+4b7306	gstIniSet	func
+4b741e	gstIniGet	func
+4b74c0	gstIniSave	func
+4b755a	gstIniSaveAs	func
+4b75f4	gstFileExists	func
+4b7640	gstLogQuitServer	func
+4b766a	gstServerInit	func
+4b7a50	gstServerResetMoves	func
+4b7aaf	gstServerSystemMessage	func
+4b7cdd	gstCheckLockstepGroup	func
+4b7d12	gstServerGroupRemove	func
+4b7e04	gstServerLeaveLockstep	func
+4b7f0e	gstServerAnnounceRoster	func
+4b80de	gstServerAddPlayer	func
+4b81d6	gstServerRemovePlayer	func
+4b8327	gstServerClearPlayer	func
+4b83c6	gstServerOnPacket	func
+4b8542	gstServerHandlePost	func
+4b86fa	gstServerHandleMove	func
+4b89ee	gstServerHandleGet	func
+4b8fc6	gstServerHandleChange	func
+4b960f	gstServerHandleJoin	func
+4b9b03	gstServerHandleMake	func
+4b9cb2	gstServerHandleQuit	func
+4b9f0f	gstServerPrepare	func
+4ba110	gstServerExit	func
+4ba350	c_dfDIMouse	data	ref1
+4bb370	c_dfDIKeyboard	data	ref1
+4bb388	DirectInputCreateA	lib
+4bb388	DirectInputCreate	lib
+4bb390	ClearMixScratch	func	exact
+4bb3b9	ClearMixOutput	func	exact
+4bb3ff	LutStoreRow	func	exact
+4bb46e	LutStoreRowStep	func	exact
+4bb513	LutAddRow	func	exact
+4bb582	LutAddRowStep	func	exact
+4bb627	LutClearRow	func	exact
+4bb668	LutStoreDual	func	exact
+4bb704	LutStoreDualStep	func	exact
+4bb778	LutAddDual	func	exact
+4bb814	LutAddDualStep	func	exact
+4bb888	LutStoreNeg	func	exact
+4bb906	LutStoreNegStep	func	exact
+4bb9b5	LutAddNeg	func	exact
+4bba33	LutAddNegStep	func	exact
+4bbae2	ClearLutPairs	func	exact
+4bbb10	LutStoreDup	func	exact
+4bbb88	LutStoreDupStep	func	exact
+4bbc38	LutAddDup	func	exact
+4bbcb0	LutAddDupStep	func	exact
+4bbd60	PackMixMono16	func	exact
+4bbdda	PackMixStereo16	func	exact
+4bbe5b	PackMixMono8	func	exact
+4bbed5	PackMixStereo8	func	exact
+4bbf50	MonoEcho	func	exact
+4bc02f	StereoEcho	func	exact
+4bc12d	MonoDelay	func	exact
+4bc1a8	StereoDelay	func	exact
+4bc22d	MonoReverb	func	exact
+4bc3de	StereoReverb	func	exact
+4bc59c	DirectPlayOrdinal4	lib
+4bc5a2	DirectPlayOrdinal2	lib
+4bc5a8	DirectPlayOrdinal1	lib
+4bc5b0	fdiv_main_routine	lib
+4bc6c7	_adj_fdiv_r	lib
+4bcb66	_fdivp_sti_st	lib
+4bcb79	_fdivrp_sti_st	lib
+4bcb8c	_adj_fdiv_m32	lib
+4bcbd8	_adj_fdiv_m64	lib
+4bcc24	_adj_fdiv_m16i	lib
+4bcc58	_adj_fdiv_m32i	lib
+4bcc8c	_adj_fdivr_m32	lib
+4bccd8	_adj_fdivr_m64	lib
+4bcd24	_adj_fdivr_m16i	lib
+4bcd58	_adj_fdivr_m32i	lib
+4bcd8c	_safe_fdiv	lib
+4bcda1	_safe_fdivr	lib
+4bcdb6	_fprem_common	lib
+4bcfbc	_adj_fprem	lib
+4bd06e	_fprem1_common	lib
+4bd274	_adj_fprem1	lib
+4bd329	_safe_fprem	lib
+4bd32f	_safe_fprem1	lib
+4bd3ba	sqrt	lib
+4bd3ba	_CIsqrt	lib
+4bd3c4	_ftol	lib
+4bd3f0	fclose	lib	ref18
+4bd490	fread	lib	ref17
+4bd660	fopen	lib
+4bd680	fseek	lib	ref3
+4bd760	ftell	lib	ref3
+4bd940	strncmp	lib
+4bd980	sprintf	lib
+4bda08	_CIsin	lib
+4bda12	cos	lib
+4bda12	_CIcos	lib
+4bda20	_chkstk	lib
+4bda50	fwrite	lib
+4bda90	_fwrite_lk	lib
+4bdc10	remove	lib
+4bdc10	_rmdir	lib
+4bdc40	pow	lib
+4bdc62	_CIpow	lib	ref12
+4bdc6c	_CIlog	lib
+4bdc6c	log	lib
+4bdc76	log10	lib
+4bdc76	_CIlog10	lib
+4bdc7d	_CIexp	lib
+4bdcc0	exit	lib
+4bdce0	_exit	lib
+4bddb0	_initterm	lib
+4bddd0	printf	lib
+4bde30	fflush	lib
+4bdeb0	_flush	lib
+4bdf20	_flushall	lib
+4be0e0	toupper	lib
+4be130	_toupper_lk	lib
+4be220	_isctype	lib
+4be2c0	vsprintf	lib
+4be330	strchr	lib
+4be390	fgetc	lib
+4be3a0	fgets	lib	ref3
+4be420	sscanf	lib
+4be4aa	atan2	lib
+4be4aa	_CIatan2	lib
+4be4c0	frexp	lib
+4be5b0	strncpy	lib
+4be5e0	time	lib	ref4
+4be640	_chdir	lib
+4be6f0	fprintf	lib
+4be8e0	_amsg_exit	lib
+4be910	free	lib	ref1
+4be930	malloc	lib
+4be9b0	memset	lib
+4bea10	memcpy	lib
+4bea10	memmove	lib
+4beb60	strlen	lib	ref1
+4bebe0	strcmp	lib
+4bec70	strcpy	lib
+4bed60	_setdefaultprecision	lib
+4bed80	_ms_p5_test_fdiv	lib
+4beef0	_forcdecpt	lib
+4bef60	_cropzeros	lib
+4befc0	_positive	lib
+4befe0	_fassign	lib
+4bf380	_cfltcvt	lib
+4bf3f0	_shift	lib
+4bf420	fFSQRT	lib
+4bf42c	rtforsqrtzero	lib
+4bf66e	_fload	lib
+4bf850	_close	lib	ref1
+4bf950	_freebuf	lib
+4bfa90	_read	lib	ref1
+4bfd40	_openfile	lib
+4c0f00	write_char	lib
+4c0f50	write_multi_char	lib
+4c0f90	write_string	lib
+4c0fd0	get_int_arg	lib
+4c0fe0	get_int64_arg	lib
+4c1000	get_short_arg	lib
+4c1010	_fFCOS	lib
+4c101a	_fFSIN	lib
+4c1024	fFTAN	lib
+4c12c0	fFYTOX	lib
+4c12d1	_fFEXP	lib
+4c134a	_fFLN	lib
+4c1364	rtforln0	lib
+4c137d	fFLNm	lib
+4c138d	rtfor0tox	lib
+4c1411	rtforexpinf	lib
+4c141e	_ffexpm1	lib
+4c1495	usepowhlp	lib
+4c14d0	_stbuf	lib
+4c2790	_hextodec	lib
+4c27d0	_inc	lib
+4c2800	_un_inc	lib
+4c2820	_whiteout	lib
+4c2850	fFASN	lib
+4c2859	fFACS	lib
+4c2862	fFATN	lib
+4c286c	_fFATN2	lib
+4c28c5	rtforatn20	lib
+4c28e8	rtforatninf	lib
+4c2900	_statfp	lib
+4c2920	_clrfp	lib
+4c2980	_set_statfp	lib
+4c29e0	_set_exp	lib
+4c2a20	_sptype	lib
+4c2a90	_decomp	lib
+4c2bd0	_except1	lib
+4c2c90	_raise_exc	lib
+4c3000	_handle_exc	lib
+4c32c0	_umatherr	lib
+4c33a0	_get_fname	lib
+4c33d0	_errcode	lib
+4c34f0	_mbctoupper	lib
+4c3580	_global_unwind2	lib
+4c35a0	_unwind_handler	lib
+4c35c2	_local_unwind2	lib
+4c362a	_abnormal_termination	lib
+4c3656	_NLG_Notify	lib
+4c37f0	_ismbblead	lib
+4c3810	x_ismbbtype	lib
+4c3930	_setargv	lib
+4c39d0	parse_cmdline	lib
+4c3f80	getSystemCP	lib
+4c3fd0	CPtoLCID	lib
+4c4030	setSBCS	lib
+4c4060	__initmbctable	lib
+4c423d	_seh_longjmp_unwind	lib
+4c4260	_FF_MSGBANNER	lib
+4c4510	_controlfp	lib
+4c4530	_abstract_cw	lib
+4c45e0	_hw_cw	lib
+4c4670	_fptrap	lib
+4c46d0	tolower	lib
+4c47c0	_ZeroTail	lib
+4c4830	_IncMan	lib
+4c48a0	_RoundMan	lib
+4c4950	_CopyMan	lib
+4c4970	_FillZeroMan	lib
+4c4980	_IsZeroMan	lib
+4c4a50	_ld12cvt	lib
+4c4c20	_ld12tod	lib
+4c4c60	_atodbl	lib
+4c4ce0	_fptostr	lib
+4c5010	_trandisp1	lib
+4c5077	_trandisp2	lib
+4c510d	_rtnospopde	lib
+4c5122	_tosnan1	lib
+4c514f	_tosnan2	lib
+4c5177	_nan2	lib
+4c51b8	_rtindfnpop	lib
+4c51c9	_rttosnpopde	lib
+4c51d3	_rtchsifneg	lib
+4c51e0	_87except	lib
+4c5690	_getbuf	lib
+4c56e0	_open	lib
+4c5c60	_aulldiv	lib
+4c5cd0	_aullrem	lib
+4c5d50	_powhlp	lib
+4c5fa0	_d_inttype	lib
+4c6020	_allmul	lib
+4c61b0	isspace	lib
+4c61e0	ungetc	lib
+4c6610	__crtMessageBoxA	lib
+4c66e0	__add_12	lib
+4c6750	__shl_12	lib
+4c6790	__shr_12	lib
+4c74f0	_frnd	lib
+4c7510	_fpclass	lib
+4c75c0	atol	lib
+4c7670	getenv	lib
+4c7af0	_mbsnbicoll	lib
+4c7b30	__wtomb_environ	lib
+4c7ee0	__crtsetenv	lib
+4c8130	findenv	lib
+4c8330	_mbsdup	lib
+4c8358	mpegDecodeAudioSamples	func	ref1
+4c83e8	mpegDrawFrameRGB16Native	func	ref1
+4c8554	mpegDrawFrameRGB16Doubled	func	ref1
+4c86da	mpegDrawFrameRGB24Doubled	func	ref1
+4c8837	mpegDrawFrameRGB32Doubled	func	ref1
+4c8994	mpegDecodeIntraBlocks	func	ref3
+4cd9a0	mpegCopyMacroblock	func	ref7
+4cdab9	mpegPredictCopy16	func	ref5
+4cdb64	mpegPredictAverage16	func	ref2
+4cdbd9	mpegPredictCopy8	func	ref5
+4cdc3b	mpegPredictAverage8	func	ref2
+4cdc9d	mpegPredictCopy16HalfX	func	ref5
+4cdd10	mpegPredictAverage16HalfX	func	ref2
+4cddab	mpegPredictCopy8HalfX	func	ref5
+4cdede	mpegPredictAverage8HalfX	func	ref2
+4ce0b1	mpegPredictCopy16HalfY	func	ref5
+4ce1ef	mpegPredictAverage16HalfY	func	ref2
+4ce3e2	mpegPredictCopy8HalfY	func	ref5
+4ce4b9	mpegPredictAverage8HalfY	func	ref2
+4ce5eb	mpegPredictCopy16HalfXY	func	ref5
+4ce7c8	mpegPredictAverage16HalfXY	func	ref2
+4cea55	mpegPredictCopy8HalfXY	func	ref5
+4ceb86	mpegPredictAverage8HalfXY	func	ref2
+4ced0f	mpegDecodeNonIntraBlocks	func	ref2
+4d0018	processVertexOffsetScale	data	ref2
+4d005c	particleSnowWidth	data	ref1
+4d00bc	shadowHeight	data	ref4
+4d0198	fixedPointScale	data	ref2
+4d01a0	angleScale	data	ref2
+4d03d8	netFixedPointScale	data
+4d03e0	netAngleScale	data
+4d0418	IID_IDirectDraw2	data	ref3
+4d0438	IID_IDirectDrawSurface2	data	ref7
+4d0468	IID_IDirect3D	data	ref2
+4d0478	IID_IDirect3DTexture	data	ref8
+4d0608	GUID_SysMouse	data	ref1
+4d0618	GUID_SysKeyboard	data	ref1
+4d0628	gstApplicationGuid	data
+4d06d8	gpiIidDirectPlay2	data
+4d1038	currentBuffer	data	ref482
+4d1040	triangleCount	data	ref29
+4d1048	scrapeVol	data	ref9
+4d104c	soundEnabled	data	ref8
+4d1050	shieldHumPlaying	data	ref5
+4d1054	droidSoundPlaying	data	ref5
+4d1058	pitAmbientPlaying	data	ref5
+4d105c	loop3	data	ref1
+4d1060	crowdSoundPlaying	data	ref5
+4d1064	scrapeSoundPlaying	data	ref5
+4d106c	testPitchStep	data
+4d1070	sfxMode	data	ref2
+4d1074	undercover	data	ref2
+4d10ac	msgSampleNotLoaded	data	ref1
+4d10d4	sampleReadMode	data	ref1
+4d10d8	msgInitSound	data	ref1
+4d1334	msgStartControlledSound	data	ref1
+4d134c	msgCrowdPrefix	data	ref1
+4d1354	msgKilledControlledSound	data	ref1
+4d1370	msgCdMusicStop	data	ref1
+4d1380	msgTerminatedSound	data	ref1
+4d13a0	circuitCountText	data	ref2
+4d13c0	msgRandomPlay	data	ref1
+4d13d0	msgStaticPlay	data	ref1
+4d13e0	msgRandomPlayMenu	data	ref1
+4d13f0	msgStaticPlayMenu	data	ref1
+4d1400	msgDemoMode	data	ref1
+4d1598	trackNameScroll	data	ref4
+4d159c	trackNameOffset	data
+4d15a4	classLaps	data	ref3
+4d15a8	hudFrame	data	ref3
+4d15ac	hudThrust	data	ref4
+4d15b8	weaponX	data	ref1
+4d15d8	weaponY	data	ref1
+4d15f8	weaponU	data	ref1
+4d1608	weaponV	data	ref1
+4d1618	weaponWidth	data	ref1
+4d1628	weaponHeight	data	ref1
+4d1640	lapTimeRows	data
+4d1648	glyphIndex	data	ref9
+4d1650	buttonIcons	data	ref1
+4d1678	numberGlyphLookup	data
+4d16a8	fontRows16	data	ref1
+4d1708	fontRows8	data	ref1
+4d1770	fontRows12	data	ref1
+4d1b68	arccos_tab	data	ref1
+4d3b70	currentFrameTime	data	ref2
+4d3b74	previousFrameTime	data	ref3
+4d3ba8	waveIndex	data	ref11
+4d3bb0	objectCullDistances	data	ref1
+4d3bc0	missileFlareCount	data	ref31
+4d3bc4	missileFlareAngle	data	ref17
+4d3bc8	electricSlotIndex	data	ref4
+4d3bcc	rocketFlareCount	data	ref31
+4d3bd0	rocketFlareAngle	data	ref17
+4d3bd4	explosionAnimFrame	data	ref1
+4d3bd8	nextParticleSlot	data	ref16
+4d3cd8	countdownActive	data	ref1
+4d3cdc	trainLightSeed	data	ref4
+4d3ce0	neonFrame	data	ref2
+4d3ce4	droidLightPhase	data
+4d3ce8	advertAngle	data	ref3
+4d3cec	fanAngle	data	ref2
+4d3cf0	startDroidIndex	data
+4d3cf4	droidBlinkTick	data
+4d3cfc	lightChaseStep	data	ref2
+4d3d00	lightUpdateTick	data	ref2
+4d3d0c	monoRailSettle	data	ref2
+4d3d10	zeppelinDrift	data	ref4
+4d3d18	cameraDroidHeight	data	ref2
+4d3d7c	radarAngle	data	ref3
+4d3d80	shakeAmount	data	ref8
+4d3e24	cameraTarget	data	ref2
+4d3e28	raceExternalVel	data	ref4
+4d3e30	droidViewVel	data	ref2
+4d3e34	collideMinAlpha	data	ref3
+4d3e3c	randomSeed	data
+4d3e40	quitRequested	data	ref4
+4d3e44	linkMyState	data	ref6
+4d3e48	titleResult	data
+4d3e4c	FR60	data	ref5
+4d3e50	doubleSourceRects	data	ref2
+4d3e54	cheatfade	data	ref6
+4d3e58	cheatWeapon	data	ref1
+4d3e5c	cheatDamage	data	ref1
+4d3e60	cheatRain	data	ref1
+4d3e64	cheatTime	data	ref1
+4d3e68	cheatDrone	data	ref1
+4d3e6c	raceInProgress	data	ref2
+4d3e70	savedAttractShip	data
+4d3e74	savedAttractActTrack	data
+4d3e78	savedAttractTrack	data
+4d3e80	pauseRequested	data	ref7
+4d3e88	hudTexturePage	data	ref42
+4d3e8c	mmxAvailable	data	ref9
+4d3e90	oneMoreTime	data
+4d3e94	typeSwitchesMode	data	ref3
+4d3e98	opaqueAlpha	data	ref18
+4d3e9c	particleAlpha	data	ref19
+4d3ea0	translucentAlpha	data	ref8
+4d3ea8	wobbleDir0	data
+4d3fa8	wobbleDir1	data
+4d40a8	wobbleDir2	data	ref1
+4d41a8	wobbleDir3	data	ref1
+4d42a8	wobbleDir4	data
+4d43a8	wobbleDir5	data	ref2
+4d44a8	wobbleDir6	data	ref3
+4d45a8	wobbleDir7	data
+4d46a8	trackDirectory	data	ref3
+4d4ea8	screenWidth	data	ref2
+4d4eac	screenHeight	data	ref1
+4d4eb0	sillyShips	data
+4d4eb4	netCdTrackError	data
+4d4eb8	cdTrackChanged	data
+4d4ebc	TextureTableCount	data	ref15
+4d4ec4	texture16Bit	data	ref29
+4d4ec8	rgbTextures	data	ref50
+4d4ecc	textDepth	data	ref31
+4d4ed0	fillEnabled	data	ref1
+4d4ed4	debugTextFlag	data	ref1
+4d4edc	messageTimer	data	ref3
+4d4ee0	hardwareVerified	data
+4d4ee4	blendByBucket	data	ref13
+4d4ef4	loadLineIndex	data	ref26
+4d4ef8	loadParticleIndex	data	ref7
+4d5090	audioRow	data	ref10
+4d50ac	savedLoop0	data	ref2
+4d50b0	savedLoop1	data	ref2
+4d50b4	savedLoop2	data	ref2
+4d50b8	savedLoop3	data	ref2
+4d50bc	savedLoop4	data	ref2
+4d50c0	savedLoop5	data	ref2
+4d50c8	cdTrackNames	data	ref1
+4d5100	cdTrackArtists	data	ref1
+4d5378	maxInstructionLength	data	ref4
+4d5380	projMatrix	data	ref2
+4d53c0	viewMatrix	data	ref1
+4d5400	viewMatrixFlipped	data	ref22
+4d5430	cameraShakeX	data	ref1
+4d5434	cameraShakeY	data	ref1
+4d5440	worldMatrix	data	ref1
+4d54c0	fadeSkipped	data	ref3
+4d54c4	trackVertexCount	data	ref1
+4d54c8	trackSectionCount	data	ref2
+4d54d0	creditManagingDirector	data	ref1
+4d54d4	creditDirectorOfDevelopment	data	ref1
+4d54d8	creditStudioManager	data	ref1
+4d54dc	creditRegionalHeadProducer	data	ref1
+4d54e0	creditHeadProducer	data	ref1
+4d54e4	creditProducer	data	ref1
+4d54e8	creditAssociateProducer	data	ref1
+4d54ec	creditGameDesigner	data	ref1
+4d54f0	creditGamePlayCoOrdinator	data	ref1
+4d54f4	creditPcVersionTeam	data	ref1
+4d54f8	creditPcProgrammingTeam	data	ref1
+4d54fc	creditPcArtists	data	ref1
+4d5500	creditPlaystation	data	ref1
+4d5504	creditDevelopmentTeam	data	ref1
+4d5508	creditPlaystationProgrammingTeam	data	ref1
+4d550c	creditPlaystationArtists	data	ref1
+4d5510	creditIntroMovieMusic	data	ref1
+4d5514	creditExtroMovieMusic	data	ref1
+4d5518	creditMusic	data	ref1
+4d551c	creditSoundEffects	data	ref1
+4d5520	creditProductManager	data	ref1
+4d5524	creditPrManager	data	ref1
+4d5528	creditCreativeServices	data	ref1
+4d552c	creditTerritoriesMarketing	data	ref1
+4d5530	creditTechnicalSupport	data	ref1
+4d5534	creditTechnicalAssistants	data	ref1
+4d5538	creditDevelopmentSecretary	data	ref1
+4d553c	creditManualWrittenBy	data	ref1
+4d5540	creditCreativeDesigner	data	ref1
+4d5544	creditPackagingDesign	data	ref1
+4d5548	creditQualityAssurance	data	ref1
+4d554c	creditQaManager	data	ref1
+4d5550	creditSpecialThanksTo	data	ref1
+4d5554	creditIanHetherington	data	ref1
+4d5558	creditAdrianParr	data	ref1
+4d555c	creditSarahHarris	data	ref1
+4d5560	creditMorganORahilly	data	ref1
+4d5564	creditFeargusCarroll	data	ref1
+4d5568	creditAndySatterthwaite	data	ref1
+4d556c	creditRobFrancis	data	ref2
+4d5570	creditNickBurcombe	data	ref1
+4d5574	creditPaulAhThion	data	ref1
+4d5578	creditStewartSockett	data	ref2
+4d557c	creditNickKimberley	data	ref2
+4d5580	creditPolSigerson	data	ref1
+4d5584	creditDaveCrook	data	ref2
+4d5588	creditJohnHarris	data	ref2
+4d558c	creditAshleySanders	data	ref2
+4d5590	creditCraigHouston	data	ref1
+4d5594	creditChrisRoberts	data	ref1
+4d5598	creditNickyCarusWestcott	data	ref1
+4d559c	creditEvePenford	data	ref1
+4d55a0	creditDarrenDouglas	data	ref1
+4d55a4	creditJeffBramfitt	data	ref1
+4d55a8	creditMickHarrison	data	ref1
+4d55ac	creditHerdKilling	data	ref1
+4d55b0	creditPerformedBy	data	ref1
+4d55b4	creditFutureSoundOfLondon	data	ref1
+4d55b8	creditSplicedByColdStorage	data	ref1
+4d55bc	creditXylem	data	ref1
+4d55c0	creditPhloem	data	ref1
+4d55c4	creditArgon	data	ref1
+4d55c8	creditXenon	data	ref1
+4d55cc	creditExtroPerformedByColdStorage	data	ref1
+4d55d0	creditBodyInMotion	data	ref1
+4d55d8	creditHakapikMurder	data	ref1
+4d55dc	creditPlasticity	data	ref1
+4d55e0	creditMessijReceived	data	ref1
+4d55e4	creditSurgeon	data	ref1
+4d55e8	creditTenation	data	ref1
+4d55ec	creditMessijXtnd	data	ref1
+4d55f0	creditKinkong	data	ref1
+4d55f4	creditMusicPerformedByColdStorage	data	ref1
+4d55f8	creditTimWright	data	ref1
+4d55fc	creditSueCampbell	data	ref1
+4d5600	creditGlenOconnell	data	ref1
+4d5604	creditLornaOwen	data	ref1
+4d5608	creditKellyEvans	data	ref1
+4d560c	creditSabineWestenberger	data	ref1
+4d5610	creditIngoZabrowoski	data	ref1
+4d5614	creditCarolineDupuy	data	ref1
+4d5618	creditBenoiteLavie	data	ref1
+4d561c	creditDawnWilliams	data	ref1
+4d5620	creditJaneHickey	data	ref1
+4d5624	creditCarolynSeager	data	ref1
+4d5628	creditMicheleHarris	data	ref1
+4d562c	creditMarkDay	data	ref1
+4d5630	creditStefanieWassell	data	ref1
+4d5634	creditSteveHenstead	data	ref1
+4d5638	creditCraigDuddle	data	ref1
+4d563c	creditChrisStanley	data	ref1
+4d5640	creditJenniferRees	data	ref1
+4d5644	creditDamonFairclough	data	ref1
+4d5648	creditAnthonyRoberts	data	ref1
+4d564c	creditJimBowers	data	ref1
+4d5650	creditPaulTweedle	data	ref1
+4d5654	creditTonyCross	data	ref1
+4d5658	creditMarkInman	data	ref1
+4d565c	creditDaveParkinson	data	ref1
+4d5660	creditRichardYandle	data	ref1
+4d5664	creditDaveBlakeborough	data	ref1
+4d5668	creditAndyDurney	data	ref1
+4d566c	creditStephenAllen	data	ref1
+4d5670	creditThomasRees	data	ref1
+4d5674	creditJeffBird	data	ref1
+4d5678	creditRobSutton	data	ref1
+4d567c	creditKevinTurner	data	ref1
+4d5680	creditDaveRose	data	ref1
+4d5684	creditDominicMallinson	data	ref1
+4d5688	creditAndyCrowley	data	ref1
+4d568c	creditPeteSheppard	data	ref1
+4d5d94	sfxActive	data	ref21
+4d5d98	sfxMuteState	data	ref6
+4d5d9c	sfxCallbackOn	data	ref3
+4d5da0	reverbSet	data	ref7
+4d5da4	reverbOn	data	ref8
+4d5da8	sfxListUpdate	data	ref9
+4d5dac	envmapr	data	ref13
+4d5db0	envmapg	data	ref13
+4d5db4	envmapb	data	ref13
+4d5dc0	reverbDepth	data	ref7
+4d5dc4	delayCoeff	data	ref4
+4d5dc8	lpDS	data	ref28
+4d5dcc	sfxInit	data	ref18
+4d5dd0	sfxStarted	data	ref2
+4d5dd4	sfxOn	data	ref7
+4d5dd8	sfxDirectMix	data	ref4
+4d5ddc	cdAuxDevice	data	ref2
+4d5de0	sfxTimerBusy	data	ref3
+4d5e00	rearLockCycle	data	ref4
+4d5e04	perfectLap	data	ref1
+4d5e08	perfectLapCount	data	ref1
+4d5e0c	missileLockTimer	data	ref4
+4d5e10	minigunAmmo	data	ref2
+4d5e14	seedWep	data
+4d5e18	fadeAmount	data	ref14
+4d5e1c	minigunFrame	data	ref2
+4d5e20	shieldFlash	data	ref6
+4d5e28	weaponChance	data
+4d5e60	weaponDrone	data
+4d5e6c	previousPlayerDamage	data	ref2
+4d5f10	mouseSensitivity	data
+4d5f14	leftKeyHeld	data
+4d5f18	rightKeyHeld	data
+4d5f1c	lastSteerKey	data
+4d5f20	mouseButton0Held	data	ref1
+4d5f24	mouseButton1Held	data	ref1
+4d5f28	mouseButton2Held	data	ref1
+4d5f2c	mouseDivisor	data
+4d5f50	cheatCodes	data
+4d5f78	joystickName	data	ref1
+4d6078	directInput	data	ref9
+4d607c	keyboardPad	data
+4d6080	mousePad	data
+4d6088	g_keyCharTable	data	ref1
+4d6188	joyButtonNow	data	ref1
+4d618c	joyButtonPrev	data	ref1
+4d6500	attractModeFlag	data	ref3
+4d6508	raceEndFlag	data	ref1
+4d6514	extendedTimeFlag	data
+4d6518	tracksWon	data	ref11
+4d6524	lightUpdate	data	ref6
+4d652c	beamCollide	data	ref2
+4d6530	raceFlag	data	ref2
+4d6534	advertCount	data	ref3
+4d6538	cameraCount	data	ref6
+4d6544	zepCount	data	ref1
+4d6548	dishCount	data	ref1
+4d6550	fanCount	data	ref1
+4d6554	smokeSlowCount	data	ref1
+4d6558	smokeFastCount	data	ref1
+4d655c	smokeNumber	data	ref2
+4d6560	fastCount	data	ref1
+4d6564	fastTexCount	data	ref1
+4d6568	slowCount	data	ref1
+4d656c	slowTexCount	data	ref1
+4d6578	bobCount	data	ref6
+4d6580	startTextureBase	data	ref1
+4d6584	redBullCount	data	ref1
+4d6588	redBullNumber	data	ref1
+4d658c	gstEventHead	data
+4d6590	gstEventTail	data
+4d6594	gstEventCount	data
+4d6598	gstGlobalShipOrder	data
+4d65b8	gstSyncActive	data
+4d65bc	playerFinishedRace	data
+4d65c0	deathCameraActive	data
+4d65c4	playerDestroyed	data
+4d65c8	resultsShown	data
+4d65cc	lockstepStatTick	data
+4d65d0	lockstepStatLast	data
+4d65d4	lockstepStatSamples	data
+4d65d8	lockstepStatDelta	data
+4d65dc	lockstepStatAverage	data
+4d65e0	gstRestartReason	data
+4d65e4	gstRestartShip	data
+4d65e8	raceControlTimerEnabled	data
+4d65ec	raceControlTimerStarted	data
+4d65f0	raceControlTimerBusy	data
+4d65f4	raceControlError	data
+4d65f8	gstRestartPending	data
+4d65fc	localRandomSeed	data
+4d6600	incomingLockstepEventCount	data
+4d6604	lockstepEventCount	data
+4d6608	netWeaponUnique	data
+4d6610	netWeaponChance	data
+4d6620	lockstepPosted	data
+4d6630	gstLockstepChannel	data
+4d6634	gstOldLockstepChannel	data
+4d6638	racePlayerCount	data
+4d6640	gstPlayerId	data
+4d6644	gstSessionId	data
+4d664c	killMessageTimer	data
+4d6650	killMessageFlash	data
+4d6654	raceControlTimerId	data
+4d6658	loopNumber	data	ref2
+4d7aa8	viewDetailLimit	data	ref4
+4d7c58	cdTrackLengths	data
+4d7dc0	gstDebugScreen	data
+4d7dc4	gstDebugLogBuffer	data
+4d7dc8	gstDebugLogRow	data
+4d7dcc	gstDebugLineEnding	data
+4d7dd0	titleSeen	data
+4d7dd4	attractCycles	data
+4d7dd8	menuQuit	data	ref3
+4d7ddc	sixTracks	data	ref3
+4d7de0	sixXPlayed	data	ref3
+4d7de4	eightTracks	data	ref3
+4d7de8	eightXPlayed	data	ref3
+4d7dec	phantomDone	data	ref1
+4d7df0	piranhaDone	data	ref1
+4d7df8	tournamentTrack	data
+4d80a8	flashNozzleShip	data	ref4
+4d80ac	targetSpin	data	ref1
+4d80b0	lastTargetShip	data	ref1
+4d80b4	targetBank	data	ref6
+4d80b8	targetvalid	data	ref3
+4d80bc	plasmaShotBusy	data	ref3
+4d80c0	trailMaxBright	data
+4d80c8	gstLevelJoinable	data
+4d80cc	gstLevelJumpIn	data
+4d80d0	gstLevelBlockSize	data
+4d80d4	gstCdError	data
+4d80d8	gstLevelWeapons	data
+4d80e4	gstLevelLaps	data
+4d80e8	gstLevelLives	data
+4d80ec	gstLevelPiranha	data
+4d80f0	gstRaceMode	data
+4d80f8	playerPoints	data
+4d8138	gstLevelTracks	data
+4d8140	gstLevelClasses	data
+4d8148	gstSessionNameLength	data
+4d814c	gstPlayerNameLength	data
+4d8150	gstSessionConfigSelection	data
+4d8154	gstTournamentCursor	data
+4d8158	gstOptionsSelected	data
+4d815c	gstSessionSelected	data
+4d8160	gstSessionScanTime	data
+4d8168	weaponNames	data
+4d81a8	currMenu	data	ref48
+4d81ac	flipView	data	ref2
+4d81b0	menuSlideActive	data	ref2
+4d81b4	menuSlideFrame	data
+4d81b8	cardNum	data	ref3
+4d81bc	menuHeading	data	ref10
+4d81c0	soundChanged	data	ref1
+4d81c4	menuAttractShip	data	ref2
+4d81c8	attractActTrackNum	data	ref2
+4d81cc	attractTrackNum	data	ref1
+4d81d0	attractTrack	data	ref1
+4d81d4	attractSettingsSaved	data	ref1
+4d81d8	redefineKey	data	ref32
+4d81dc	quitMenuSelection	data	ref8
+4d81e0	saveState	data	ref12
+4d81e4	saveCursor	data	ref14
+4d81e8	nameCursor	data	ref11
+4d81ec	textExtendedSpacing	data	ref6
+4d81f0	redefineCancelled	data	ref6
+4d81f4	menuDisplayActive	data	ref2
+4d81f8	redefineStep	data	ref2
+4d81fc	redefineMode	data	ref15
+4d8200	menuEditorActive	data	ref1
+4d8204	menuPrevious	data	ref7
+4d820c	menuButtonCount	data	ref1
+4d8210	menuSlideX	data
+4d8214	menuSlideY	data
+4d8218	menuSlideStep	data
+4d821c	lastClassSelection	data	ref1
+4d8220	savedRaceSelection	data	ref1
+4d8222	savedTeamSelection	data	ref2
+4d8224	savedClassSelection	data	ref2
+4d8226	savedTrackSelection	data	ref8
+4d8228	savedMainSelection	data	ref2
+4d8230	trackModelOrder	data	ref1
+4d8240	raceTracks	data	ref1
+4d8248	menuTileCount	data	ref1
+4d8250	controlActionNames	data	ref1
+4d8278	keyboardKeyNames	data	ref2
+4d8678	joystickButtonNames	data
+4d86f8	keyCursorLeft	data	ref2
+4d8750	keyCursorRight	data	ref2
+4d87a8	gstSessionCount	data
+4d87ac	gstLobbyCount	data
+4d87b0	gstSessionText	data
+4d8820	gstWeaponGridNames	data
+4d8864	gstMenuLaps	data
+4d8868	gstSessionLapOptionText	data
+4d8880	gstSessionLapOptionY	data
+4d8898	gstMenuLives	data
+4d88a0	gstSessionLifeOptionText	data
+4d88b8	gstSessionLifeOptionY	data
+4d88d0	gstMenuPiranha	data
+4d88d8	gstSessionPiranhaOptionText	data
+4d88e0	gstSessionPiranhaOptionY	data
+4d88e8	gstWeaponGridSelection	data
+4d88f0	gstSessionClassNames	data
+4d8900	gstTrackNames	data
+4d8920	gstMenuRaces	data
+4d8930	gstJoinValues	data
+4d8938	gstWeaponGridX	data
+4d8960	gstClassNames	data
+4d8970	gstEntryX	data
+4d89b0	gstEntryY	data
+4d89f0	gstJoinError	data
+4d89f8	gstTeamSlots	data
+4d8a10	gstRestartSeen	data
+4d8a18	shipSpin	data
+4db5f0	flyingFlags	data	ref9
+4db630	nameCharPrev	data
+4db698	scoreNameTrack0Class0	data
+4db6a8	scoreNameTrack0Class1	data
+4db6b8	scoreNameTrack0Class2	data
+4db6c8	scoreNameTrack0Class3	data
+4db6d8	scoreNameTrack1Class0	data
+4db6e8	scoreNameTrack1Class1	data
+4db6f8	scoreNameTrack1Class2	data
+4db708	scoreNameTrack1Class3	data
+4db718	scoreNameTrack2Class0	data
+4db728	scoreNameTrack2Class1	data
+4db738	scoreNameTrack2Class2	data
+4db748	scoreNameTrack2Class3	data
+4db758	scoreNameTrack3Class0	data
+4db768	scoreNameTrack3Class1	data
+4db778	scoreNameTrack3Class2	data
+4db788	scoreNameTrack3Class3	data
+4db798	scoreNameTrack4Class0	data
+4db7a8	scoreNameTrack4Class1	data
+4db7b8	scoreNameTrack4Class2	data
+4db7c8	scoreNameTrack4Class3	data
+4db7d8	scoreNameTrack5Class0	data
+4db7e8	scoreNameTrack5Class1	data
+4db7f8	scoreNameTrack5Class2	data
+4db808	scoreNameTrack5Class3	data
+4db814	scoreNameTrack6Class0	data
+4db81c	scoreNameTrack6Class1	data
+4db828	scoreNameTrack6Class2	data
+4db838	scoreNameTrack6Class3	data
+4db844	scoreNameTrack7Class0	data
+4db84c	scoreNameTrack7Class1	data
+4db858	scoreNameTrack7Class2	data
+4db868	scoreNameTrack7Class3	data
+4dbaf8	sfxSoundReady	data	ref14
+4dbafc	sfxCallbackActive	data	ref2
+4dbcf0	skyPos	data	ref2
+4dbf70	spreadScale0	data
+4dbf80	spreadScale1	data
+4dbf90	spreadScale2	data
+4dbfa0	spreadScale3	data
+4dbfb0	shipMassClass0	data
+4dbfd0	shipMaxThrustClass0	data
+4dbff0	shipResistanceClass0	data
+4dc010	shipHeadingIncClass0	data
+4dc030	shipMaxHeadingClass0	data
+4dc050	shipSkidClass0	data
+4dc070	shipMassClass1	data
+4dc090	shipMaxThrustClass1	data
+4dc0b0	shipResistanceClass1	data
+4dc0d0	shipHeadingIncClass1	data
+4dc0f0	shipMaxHeadingClass1	data
+4dc110	shipSkidClass1	data
+4dc130	shipMassClass2	data
+4dc150	shipMaxThrustClass2	data
+4dc170	shipResistanceClass2	data
+4dc190	shipHeadingIncClass2	data
+4dc1b0	shipMaxHeadingClass2	data
+4dc1d0	shipSkidClass2	data
+4dc1f0	shipMassClass3	data
+4dc210	shipMaxThrustClass3	data
+4dc230	shipResistanceClass3	data
+4dc250	shipHeadingIncClass3	data
+4dc270	shipMaxHeadingClass3	data
+4dc290	shipSkidClass3	data
+4dc2b0	shipRemoteMaxClass0	data
+4dc2d0	shipRemoteMagClass0	data
+4dc2f0	shipRemoteMaxClass1	data
+4dc310	shipRemoteMagClass1	data
+4dc330	shipRemoteMaxClass2	data
+4dc350	shipRemoteMagClass2	data
+4dc370	shipRemoteMaxClass3	data
+4dc390	shipRemoteMagClass3	data
+4dc3b0	startLinePos	data	ref1
+4dc3e0	highResTable	data	ref2
+4dc400	sharkWiggle	data	ref1
+4dc404	shipTex	data
+4dc408	sharkToggle	data	ref2
+4dc40c	bigGrid	data
+4dc5a4	droidFlyin	data	ref3
+4dc5e0	attractStep	data	ref2
+4dc780	classSpeedLimit	data	ref2
+4dc788	classSpeedMargin	data	ref3
+4dc790	classAccel	data	ref3
+4dc798	classSteer	data	ref1
+4dc7a0	pitLaneSection1	data	ref1
+4dc7b0	pitLaneSection2	data	ref1
+4dc7c0	pitLaneDirection	data	ref2
+4dc7e0	windowHook	data	ref4
+4dc7e4	moviePlaying	data	ref2
+4dc7e8	gstUseGPI	data
+4dc7ec	setupWindowActive	data	ref1
+4dc7f0	startGameRequested	data
+4dc7f4	acceleratorAvailable	data	ref1
+4dc7f8	accelDriverIndex	data	ref1
+4dc7fc	accelDeviceIndex	data	ref2
+4dc800	gameWindowActive	data
+4dc804	resolutionSelection	data	ref3
+4dc808	gstProviderChoice	data
+4dc80c	formatOverride	data	ref7
+4dc810	noSavedConfig	data
+4dc818	trackCycleActive	data
+4dc81c	raceFinished	data	ref1
+4dc824	pixelFormatIndex	data	ref1
+4dc828	displayResolutionLabels	data	ref2
+4dc840	displayResolutions	data	ref2
+4dc864	savedPaletteInUse	data	ref1
+4dc868	g_cdValidating	data	ref2
+4dc8b0	gstLaunchMode	data
+4dc8b4	connectionCount	data
+4dc8bc	networkGame	data
+4dc8c0	gstSwitch	data
+4dc8c4	gstDebugOutputEnabled	data
+4dc8c8	gstTitleName	data
+4dc8cc	gstTitleVersion	data
+4dc8d0	gstTitleDescription	data
+4dc8d4	displayDriverCount	data	ref15
+4dc8d8	displayDriverConfigTag	data
+4dc8dc	textureFormatCount	data	ref2
+4dc8e0	videoModeIndex	data	ref38
+4dc8e4	bestTextureFormat	data	ref4
+4dc8e8	argb1555Format	data	ref5
+4dc8ec	pixelFormatGroup	data	ref15
+4dc8f0	displayBits	data	ref8
+4dc8f4	paletteDirty	data	ref4
+4dc8f8	texturePageSize	data	ref6
+4dc8fc	videoSettingsLoaded	data	ref1
+4dc900	primarySurface	data	ref31
+4dc904	renderBufferIndex	data	ref16
+4dc908	defaultPalette	data	ref20
+4dc90c	gamePalette	data	ref1
+4dd11c	screenshotNumber	data
+4dd120	mainButtonDefs	data	ref6
+4dd180	mainComboDefs	data	ref5
+4dd1c8	mainLabelDefs	data	ref6
+4dd270	setupButtonDefs	data	ref6
+4dd2a0	setupComboDefs	data	ref5
+4dd2d0	setupGroupDefs	data	ref6
+4dd300	debugLogStarted	data
+4dd304	fileLogStarted	data
+4df868	g_w32sKernelName	data	ref1
+4df878	g_imteFromHModuleProcName	data	ref1
+4df88c	g_baseAddrFromImteProcName	data	ref1
+4dfe38	classCheckTime	data	ref1
+4dfe48	startCountdown	data	ref5
+4dfe58	lowTideMark	data	ref2
+4dfe5c	msgInsufficientMemory	data	ref1
+4dfe80	msgDFreeNotFound	data	ref1
+4dfeb0	mpegPlaybackState	data	ref1
+4dfeb8	mpegIntroAudioBuffer	data	ref3
+4dfebc	mpegPalette	data	ref4
+4dfec0	mpegVideo	data	ref25
+4dfecc	mpegPicWidth	data	ref2
+4dfed0	mpegPicHeight	data	ref2
+4dfed4	mpegStreamResetValue	data	ref1
+4dfed8	mpegHeapPeak	data	ref2
+4dfedc	mpegDrawMode	data	ref9
+4dfee0	mpegPaletteBlackIndex	data	ref6
+4dfee4	mpegPaced	data	ref3
+4dfee8	mpegFirstFrame	data	ref1
+4dfeec	mpegLastFrame	data	ref3
+4dff20	mpegAudioPos	data	ref5
+4dff24	mpegFrameCount	data	ref3
+4dff28	mpegDropCount	data	ref1
+4dff2c	mpegTicks	data	ref9
+4dff30	defaultIntraQuant	data	ref1
+4dffb0	defaultNonIntraQuant	data	ref1
+4e0030	zigzag	data	ref2
+4e00b0	mpegAbort	data	ref3
+4e00b4	mpegTickTotal	data	ref1
+4e00b8	mpegLate	data	ref2
+4e00bc	mpegSync	data	ref2
+4e0288	mbAddrIncCodes	data	ref1
+4e03a0	mbTypePCodes	data	ref1
+4e03d8	mbTypeBCodes	data	ref1
+4e0430	codedBlockPatternCodes	data	ref5
+4e0628	motionCodes	data	ref1
+4e0e20	bitMask	data	ref91
+4e0ec0	mpegJumpTable	data	ref2
+4e0ec4	mpegCodeBase	data	ref2
+4e0ed0	scaleBase	data	ref1
+4e0fd0	scaleStep	data	ref1
+4e10d0	funcDepth	data	ref6
+4e1108	sndActive	data	ref7
+4e110c	sndTimer	data	ref5
+4e1110	panTable	data	ref2
+4e1150	gstCodecErrorNames	data
+4e1160	gstCodecFunctionNames	data
+4e1448	gstCampaignId	data
+4e144c	gstGpiSessionId	data
+4e1450	gstTitleId	data
+4e1454	gstBufferList	data
+4e1458	gstGpiErrorNames	data
+4e1480	gstGpiFunctionNames	data
+4e167c	gstDefaultPort	data
+4e1680	D_4e1680	data
+4e3630	gstMode	data
+4e3634	gstFlags	data
+4e3638	gpiDriverSlot00	data
+4e363c	gpiDriverSlot04	data
+4e3640	gstDriverFlush	data
+4e3644	gstInitHook	data
+4e3648	gstDriverSlot08	data
+4e364c	gstDriverSlot0c	data
+4e3650	gstDriverSlot10	data
+4e3654	gstDriverCall	data
+4e3658	gstDriverSlot18	data
+4e365c	gstDriverSlot1c	data
+4e3660	gstDriverSlot20	data
+4e3664	gstDriverSlot24	data
+4e3668	gpiDriverSlot28	data
+4e366c	gpiDriverSlot2c	data
+4e3670	gstDriverSlot30	data
+4e3674	gpiDriverSlot34	data
+4e3678	gpiDriverSlot38	data
+4e367c	gpiDriverSlot3c	data
+4e3680	gpiDriverSlot40	data
+4e3684	gstDriverSlot44	data
+4e3688	gstVerbose	data
+4e368c	gstUserErrorCount	data
+4e3690	gstUserErrors	data
+4e3694	gstUserFunctionCount	data
+4e3698	gstUserFunctions	data
+4e40f0	gstVxdHandle	data
+4e40f4	gstVxdEvents	data
+4e40f8	gstVxdLockReady	data
+4e40fc	gstVxdStopEvent	data
+4e4100	gstVxdThread	data
+4e4104	gstVxdThreadId	data
+4e4108	gstAllocHandler	data
+4e410c	gstFreeHandler	data
+4e4110	gstStatusCallback	data
+4e4114	gstDelayHandler	data
+4e4118	gstClockHandler	data
+4e411c	gstCancelCallback	data
+4e4120	gstDebugPrintCallback	data
+4e4124	gstErrorCallback	data
+4e4128	gstUserId	data
+4e4148	gstGameName	data
+4e4318	gpiBase	data
+4e431c	gpiInterface	data
+4e4320	gpiDirectPlay	data
+4e4324	gpiLobbyConnection	data
+4e4328	gpiLobbied	data	ref1
+4e432c	gpiPlayerEvent	data
+4e4334	gpiEventContext	data
+4e4338	gpiCallbackContext	data
+4e433c	gpiGroupContext	data
+4e4340	gpiConnectionContext	data
+4e4344	gpiReceiveLockCreated	data
+4e4348	gpiSessionFlags	data
+4e434c	gpiServerEvent	data
+4e4350	gpiPlayerId	data
+4e4354	gpiSessionId	data
+4e4358	gpiLockCreated	data
+4e435c	gpiRequestId	data
+4e4360	gpiPendingRequests	data
+4e4364	gpiReady	data
+4e4368	gstDpErrorNames	data
+4e43b0	gstDpFunctionNames	data
+4e4448	gstDpsFunctionNames	data
+4e4a78	gstDefaultPacketHandler	data
+4e4a7c	gstDispatchErrorNames	data
+4e4a80	gstDispatchFunctionNames	data
+4e4bd4	gstServerSessionId	data
+4e4bd8	gstServerDataSize	data
+4e4bdc	gstServerData	data
+4e4be0	gstServerNextNumber	data
+4e4be4	gstScoreCount	data
+4e4be8	gstMoveSize	data
+4e4bec	gstMoveCounter	data
+4e4bf0	gstHostDpid	data
+4e4bf4	gstLockstepGroup	data
+4e50d8	sndWordsLeft	data	ref6
+4e50dc	sndRunLeft	data	ref6
+4e50e0	sndSamples	data	ref12
+4e50e4	sndCarry	data	ref6
+4e50e8	sndEndE	data	ref4
+4e50ec	sndEndB	data	ref4
+4e50f0	sndEndC	data	ref4
+4e50f4	sndEndD	data	ref4
+4e526c	_adjust_fdiv	data	ref1
+4e52c0	_iob	lib
+4e5548	_pctype	data
+4e5754	__mb_cur_max	data
+4e69a8	cameraStaticPos	data	ref4
+4e69b8	sfxCache	data	ref43
+4e73b8	mixPos	data	ref14
+4e73bc	sfxCallback	data	ref2
+4e73c0	sfxSlots	data	ref40
+4e74c0	mixResult	data	ref6
+4e74c4	sfxListTail	data	ref4
+4e74c8	sfxListHead	data	ref12
+4e74d0	savedVolume	data	ref2
+4e74f0	sfxItem	data	ref21
+4e74f4	sfxIter	data	ref8
+4e74f8	sfxDoMix	data	ref6
+4e74fc	sfxIter2	data	ref7
+4e7500	sfxDoMixCopy	data	ref7
+4e7504	reverbType	data	ref3
+4e7508	gstLobbyIds	data
+4e7528	gstSessionNames	data
+4e7910	gstSessionIds	data
+4e7938	gstLobbyNames	data
+4e7f18	gstSessionRequest	data
+4e7f28	saveMessageFrames	data	ref3
+4e7f30	gstJoinInfo	data
+4e7f38	gstLevelBlock	data
+4e8738	sfxMixChannels	data	ref28
+4e8750	lutMode	data	ref3
+4e8754	lutQuads	data	ref9
+4e8758	mixPanSide	data	ref5
+4e8760	dsCallback	data	ref2
+4e8764	dsBufferResult	data	ref36
+4e8768	dsSoundSlots	data	ref11
+4e88e8	dsSoundSamples	data	ref46
+4eb6e8	sfxVolumeTable	data	ref3
+4ebae8	dsSoundDevice	data	ref6
+4ebaf0	sfxPanTable	data	ref3
+4ebb68	timList	data	ref6
+4ec1b0	wadTimList	data	ref6
+4ec7f8	droidTarget	data	ref6
+4ecaf0	gstTitle	data
+4ecafc	presentStartTime	data
+4ecb00	gstProviderIds	data
+4ecb28	gstCampaign	data
+4ecb38	gstShipScore	data
+4ecb4c	renderQueueCounter3	data	ref1
+4ecb50	renderQueueCounter1	data	ref1
+4ecb54	setupLoopTick	data	ref1
+4ecb58	controlKeyDown	data	ref3
+4ecb5c	renderQueueCounter0	data	ref1
+4ecb64	setupTimeout	data
+4ecb6c	driverNoteWnd	data	ref2
+4ecb70	renderQueueCounter2	data	ref1
+4ecb74	mpegIntroAudioLockResult	data	ref2
+4ecb84	mpegFrameTimer	data	ref5
+4ecb88	sndStreamPos	data	ref8
+4ecb8c	mpegSndResult	data	ref10
+4ecb90	sndPlaying	data	ref5
+4ecb94	sndPartial	data	ref5
+4ecb98	sndLastBlock	data	ref12
+4ecba0	gstSettings	data
+4ecba8	gstVxdLock	data
+4ecbc0	gstVxdConfig	data
+4ecbc8	D_4ecbc8	data
+4ecbd4	D_4ecbd4	data
+4ecbd8	gpiInterfaceIid	data
+4ecbe8	gpiApplicationGuid	data
+4ecbf8	g_gpiCriticalSection	data
+4ecc10	gstPlayer	data
+4ecc30	D_4ecc30	data
+4ecc34	D_4ecc34	data
+4ecc70	gpiStatus	data
+4ecc80	gpiPlayerConfig	data
+4ecca8	gpiServiceGuid	data
+4eccb8	gpiReceiveLock	data
+4eccd0	gstDownQueue	data
+4ecce0	gstTagFlags	data
+4ecde0	gstTagPollHandler	data
+4ed1e0	gstTagHandler	data
+4ed5e0	gstServer	data
+4ed624	gstServerPlayerCount	data
+4ed628	gstServerSlots	data
+4ed650	gstServerPlayers	data
+4ed658	gstServerConfig	data
+4ed7e8	windowBrush	data	ref1
+4ed7ec	pvrCommandHandle	data	ref5
+4ed7f0	pvrCommandSurface	data	ref28
+4ed7f4	zBufferSurface	data	ref2
+4ed800	bmpBuffer	data	ref2
+8fe100	windowPalette	data	ref10
+8fe104	displayStat1	data	ref1
+8fe110	surfaceTextures0	data	ref6
+8fe180	textureHandles	data	ref21
+8fe1e8	pixelBlueBits	data
+8fe1f0	activeDeviceCaps	data	ref1
+8fe268	gameFlags	data	ref10
+8fe2a0	g_cdMessage	data	ref25
+8fe304	pixelRedBits	data
+8fe308	lpD3DDevice	data	ref45
+8fe310	setupBackground	data	ref12
+8fe328	backBuffer	data	ref34
+8fe32c	g_hInstance	data	ref6
+8fe330	paletteEntries	data	ref5
+8fe730	setupCombos	data	ref16
+8fe734	soundModeComboBox	data
+8fe738	connectionListBox	data
+8fe73c	pvrCommandData	data	ref6
+8fe740	ppmPixelFormat	data	ref18
+8fe760	executeBuffersCreated	data
+8fe770	renderViewportData	data	ref11
+8fe7a0	displayDrivers	data	ref45
+902ab0	direct3D	data	ref11
+902ac0	windowMessage	data	ref15
+902adc	renderViewport	data	ref11
+902ae0	textureRecords	data	ref134
+902b00	textureSets	data	ref5
+902b0c	blitTextures	data	ref1
+902fc0	surfaceTextures2	data	ref12
+903028	bestBlueBits	data	ref1
+90302c	setupQuitRequested	data	ref4
+903030	pixelBlueDown	data	ref2
+903034	bestRedBits	data	ref1
+903038	pixelGreenBits	data
+90303c	pixelRedDown	data	ref2
+903040	executeBuffers	data	ref11
+903108	lastFpsSecond	data	ref4
+90310c	screenScaleX	data	ref13
+903110	fullscreenDisplay	data	ref1
+903114	fpsSampleTotal	data	ref2
+903120	setupLabels	data	ref4
+903140	renderBufferState	data	ref3
+903208	fpsSampleCount	data	ref2
+903210	dialogGroups	data	ref3
+903218	formatComboBox	data	ref8
+90321c	modeComboBox	data	ref5
+903220	screenScaleY	data	ref13
+903224	dxErrorLine	data	ref106
+903228	ddResult	data	ref147
+90322c	usingSystemPalette	data	ref2
+903230	setupBanner	data
+903234	bestBlueDown	data	ref1
+903238	displayStat0	data	ref1
+90323c	bestGreenBits	data	ref1
+903240	bestRedDown	data	ref1
+903250	textureFormats	data	ref14
+903790	pixelGreenDown	data	ref1
+9037a0	bufferDescriptionTemplate	data	ref3
+9037b4	pixelBlueUp	data	ref1
+9037b8	pixelGreenUp	data	ref2
+9037bc	framesThisSecond	data	ref6
+9037c0	systemPalette	data	ref10
+903bc0	lpDD	data	ref59
+903bd0	defaultPaletteEntries	data	ref10
+903fbc	droidBlinkColour	data
+903fc8	lightStartColour	data	ref4
+903fd0	bestBlueUpNet	data
+903fe0	textureSurfaces	data	ref4
+903fe4	copyrightSurface	data	ref3
+903fe8	pressSurface	data
+904118	ddCreateFailed	data	ref1
+904124	setupWindow	data	ref5
+904128	normalSetNo	data	ref32
+90412c	viewScaleY	data	ref1
+904130	pixelRedUp	data	ref1
+904140	executeData	data	ref13
+904170	bestGreenUpNet	data
+904174	g_hwnd	data	ref15
+904180	setupButtons	data	ref3
+904190	vertexBufferSize	data	ref3
+9041a0	surfaceTextures1	data	ref7
+904208	vertexAlpha	data	ref10
+90420c	bestGreenDown	data	ref1
+904210	bestRedUpNet	data
+904214	setupLogo	data
+904218	dialogButtons	data	ref3
+904220	lpDD2	data	ref21
+904230	savedPalette	data	ref12
+904630	nameDrawFirst	data	ref23
+904634	pvrCommandTexture	data	ref13
+904640	availableModes	data	ref5
+904ca0	viewScaleX	data	ref1
+904ca4	renderSize	data
+904cb0	gsz	data	ref7
+904cc0	stack	data	ref2
+904f40	MaxZValue	data	ref3
+904f50	BK	data	ref45
+904f60	FC	data	ref48
+904f70	SineTable	data	ref4
+90cf70	LCM	data	ref107
+90cf90	screenZ	data	ref69
+90cfa0	LLM	data	ref109
+90cfc0	LLV	data	ref93
+90cfd8	SCR2	data	ref66
+90cfe0	RTM	data	ref89
+90d000	grgb	data	ref161
+90d030	xOffset	data	ref36
+90d034	HalfZValue	data	ref2
+90d038	yOffset	data	ref36
+90d03c	FFAR	data	ref21
+90d040	stackPtr	data	ref7
+90d050	gsxy	data	ref3
+90d05c	FNEAR	data	ref28
+90d060	cdMusicIndex	data	ref15
+90d070	cdMusicTable	data	ref11
+90d08c	randSeed	data	ref5
+90d090	blitCount	data	ref22
+90d094	blitBuffer0Count	data
+90d098	blitBuffer1Count	data
+90d09c	blitBuffer2Count	data
+90d0a0	blitQueue	data	ref22
+9341a0	surfaceInfo	data	ref8
+9341a8	titleLoaded	data
+9341b4	copyrightShown	data	ref1
+9341c0	pressLoaded	data
+9341f4	sharkVertCount	data	ref2
+934200	sharkFootVerts	data	ref3
+9343c0	proximity	data	ref3
+9343d0	shipViewPos	data	ref3
+9344c0	shipMag	data	ref2
+934500	sharkFootIndex	data	ref4
+934540	gridPosition	data
+934560	sharkBaseVerts	data	ref3
+9364a0	smallVram	data	ref2
+9364a4	loadingSky	data	ref2
+9364b0	loadQuads	data
+937130	loadLastPage	data
+937140	loadVertices	data
+94e840	loadQuadCount	data
+94e844	lutAcc	data	ref20
+94e848	decodeSrc	data	ref50
+94e84c	lutPairsB	data	ref2
+94e850	lutPairsA	data	ref3
+94e860	sfxMixDispatch	data	ref17
+94e960	lutRows	data	ref6
+94e964	lutRowB	data	ref16
+94e965	lutRowA	data	ref20
+94e966	lutRowSingle	data	ref12
+94e968	lutOut	data	ref48
+94e96c	quantTable	data	ref17
+94e970	lutStep	data	ref12
+94e974	lutCount	data	ref47
+94e980	hiScoreTable	data	ref10
+94ee80	mouseButtons	data	ref8
+94ee98	menuLayout	data	ref2
+94eea0	saveSlots	data	ref4
+94f070	menuTextureA	data	ref1
+94f080	gstSessionName	data
+94f0f0	keyboardKeys	data	ref15
+94f120	menuBackdropRects	data
+94f190	menuBackPolys	data
+94f3c0	deviceChosen	data	ref1
+94f3c4	preCalcObject	data	ref2
+94f3d0	shipModels	data	ref2
+94f3f0	gstPlayerName	data
+94f454	gstIsHost	data
+94f460	VertexNormal	data	ref5
+950400	menuTiles	data	ref1
+952660	gstShipTaken	data
+952680	joystickButtons	data	ref3
+952698	savedDeviceType	data
+9526a0	savedConfig	data
+9526b2	savedOptions	data
+952754	savedHiScores	data
+952c60	menuBars	data	ref5
+952c90	menuModels	data	ref3
+952cb8	menuTextureB	data	ref1
+952cc0	teamShipModels	data	ref3
+952cd0	defaultSlot	data
+952d0c	menu	data	ref45
+952d10	menuState	data	ref113
+952d64	nameBuffer	data
+952da4	deviceType	data	ref14
+952da8	shipTrails	data	ref51
+952db0	Plasma	data	ref36
+9540b0	muzzleleft	data	ref25
+9540f0	muzzleright	data	ref25
+954130	targetPrims	data	ref30
+954330	flare	data	ref111
+956340	plasmaPhaseA	data	ref1
+956348	targetFlags	data	ref2
+956350	plasmaPhaseB	data	ref1
+956360	muzzlebot	data	ref25
+956398	plasmaPhaseC	data	ref1
+9563a0	muzzletop	data	ref25
+9563d8	menuTimeout	data	ref1
+9563dc	mainheapcopy	data	ref1
+9563e0	initialGameData	data
+956414	gameData	data	ref44
+956418	reserveHeapCopy	data
+95641c	introSoundBuffer	data	ref6
+956420	savedTextureTableCount	data	ref1
+956430	cdTrackFrames	data
+956494	g_cdDeviceID	data	ref16
+9564a0	cdTrackTable	data
+956630	g_mask	data	ref1
+956640	g_DrawEnv	data	ref19
+9566a0	g_DispEnv	data	ref11
+9566c0	zeppelinBase	data	ref6
+9566d0	redBull	data	ref1
+956720	weaponGrids	data	ref1
+956728	renderLoopProfileTime2	data	ref1
+956730	cameraDroids	data	ref6
+956794	shipIndex	data	ref42
+956798	smokeColour	data	ref2
+9567b0	residentSkeleton	data	ref20
+9567d0	renderLoopProfileTime	data	ref1
+9567e0	gstRestartHack	data
+956860	gstSyncMessage	data
+956e48	teamShip	data	ref1
+956e4c	tempGameData	data	ref8
+956e50	gstCheckFail	data
+956ec8	lastVictim	data
+956ed0	checkCells	data	ref3
+957410	renderProfileTimer	data
+957420	gstSyncLocal	data
+9576a0	gstEventQueue	data
+974f50	startPath	data	ref1
+975050	neonObject	data	ref1
+9750c8	D_9750c8	data
+9750d0	monoRailObjs	data	ref1
+975140	pause	data	ref8
+975160	weaponIndex	data	ref2
+975170	advert	data	ref3
+975198	weaponBars	data	ref2
+9751a8	D_9751a8	data
+9751b0	D_9751b0	data
+9751c0	killerCount	data
+9751d0	particleSlots	data	ref23
+9751d4	upperSkeleton	data	ref16
+9751d8	flipProfileTime	data	ref1
+9751e0	renderProfileTimer2	data
+975228	hudDisabled	data	ref1
+975250	killerTotal	data
+975260	startDroidObjects	data	ref1
+975270	smokeSlowObjects	data	ref1
+9752a0	monoRail	data	ref1
+9752d4	lastKiller	data
+9752f0	checkTimer	data	ref3
+975350	posMonoRail	data	ref1
+9753b0	radar	data	ref1
+9753d0	lightGroups	data	ref3
+9753f0	fans	data	ref1
+975404	droidPaletteColour	data
+975410	shipShapeTable	data	ref12
+975490	livesRemaining	data
+9754a0	D_9754a0	data
+9754b0	smokeFastObjects	data	ref1
+9754d8	zeppelinObj	data	ref4
+9754e0	gstidLockstepPlayers	data
+975520	fillProfileTime	data	ref1
+975528	savedTextureCount	data	ref1
+97552c	raceFrameReady	data
+975530	gstSyncRemote	data
+97565c	residentTextureSeq	data	ref1
+975660	joyInfo	data	ref3
+975694	mouseDevice	data	ref14
+9756a0	mouseBufferSize	data
+9756a4	mouseBufferHeaderSize	data
+9756a8	mouseBufferProp	data	ref2
+9756b4	keyboardDevice	data	ref14
+9756b8	mouseDelta	data
+9756bc	keyboardAcquired	data	ref4
+9756c0	cheatBuffer	data
+9756ca	mouseX	data
+9756d0	keyboardEvents	data
+9758d0	mouseAcquired	data	ref4
+9758d4	joyResult	data
+9758e0	joyCaps	data	ref1
+975a80	mouseEvents	data
+975c80	kbdBufferProp	data	ref3
+975ca0	shipDamage	data	ref8
+975ce0	shieldGreen	data	ref14
+975d20	fadedrm	data	ref1
+975d30	fadeTile	data	ref3
+975d40	shipDeathCount	data	ref9
+975d80	shieldRed	data	ref15
+975dc0	plasmaCharge	data	ref22
+975df0	fracdamage	data	ref5
+975e2c	fadeBlue	data	ref3
+975e2e	fadeGreen	data	ref4
+975e30	fadeActive	data	ref4
+975e32	fadeRed	data	ref4
+975e40	dsCaps	data	ref7
+975ea0	primaryBuffer	data	ref11
+975ea4	sfxMixMode	data	ref3
+975ea8	timerId	data	ref5
+975eac	dsResult	data	ref15
+975eb0	waveFormat	data	ref36
+975ec4	comb3Len	data	ref4
+975ec8	comb1Pos	data	ref5
+975ecc	comb1Buf	data	ref9
+975ed0	delayPos	data	ref9
+975ed4	allPassPos	data	ref5
+975ed8	delayBuf	data	ref11
+975edc	allPassBuf	data	ref9
+975ee0	comb2Pos	data	ref5
+975ee4	workBuf	data	ref7
+975ee8	comb2Buf	data	ref9
+975eec	comb1Len	data	ref4
+975ef0	allPassLen	data	ref4
+975ef4	doReverb	data	ref7
+975ef8	comb3Pos	data	ref5
+975efc	comb3Buf	data	ref9
+975f00	comb2Len	data	ref4
+975f04	delayLen	data	ref6
+975f10	StaticDepth	data
+9766e0	awardedMedal	data	ref8
+9766f0	envMapU	data	ref8
+976ae0	StaticRVert	data	ref31
+97a960	StaticScreen	data
+97b900	StaticFlags	data
+97c0d0	cameraOffset	data	ref3
+97c0e0	doubleBuffer	data	ref6
+97c0e4	g_menuDisplayEnv	data	ref1
+97c0e8	CurrentScreen	data	ref62
+97c0f0	cameraMatrix	data	ref14
+97c110	envMapV	data	ref8
+97c4f8	mixLeadBytes	data	ref3
+97c4fc	mixScratchBytes	data	ref1
+97c500	mixScratch	data	ref19
+97c504	mixBlockWords	data	ref1
+97c508	mixChunkBytes	data	ref2
+97c50c	mixBuffer	data	ref21
+97c510	mixBufferBytes	data
+97c514	mixClearDst	data	ref3
+97c518	mixBufFrames	data	ref18
+97c51c	mixUnused0	data	ref1
+97c520	mixClearBits	data	ref3
+97c524	decodeDst	data	ref10
+97c528	mixQuarterBytes	data	ref2
+97c52c	mixHalfBytes	data	ref2
+97c530	mixCount	data	ref10
+97c534	sfxMaxActive	data	ref8
+97c538	mixSrc	data	ref6
+97c540	creditEntries	data	ref154
+97d530	tileSurfaces	data	ref6
+981a20	trackFacePage	data	ref2
+982380	trackLo0	data	ref2
+987b00	trackLo1	data	ref2
+98d280	trackLo	data	ref2
+98d288	sourceVertexCount	data	ref4
+98d28c	processInstruction	data	ref12
+98d290	quadVertexCount	data	ref2
+a2ef90	quadVertices	data
+a36c90	sourceOwner	data	ref2
+a44750	renderInstruction	data	ref415
+a44760	vertexIndices	data	ref13
+a52220	instructionBuffer	data	ref6
+a52228	profileQueueTime	data	ref2
+a52230	renderVertexCount	data	ref22
+a52238	startBufferTime	data	ref4
+a52240	vertexData	data	ref4
+a52250	renderQueue	data	ref52
+a55a90	sourceVertices	data	ref3
+a63550	matrixProj	data	ref4
+a63558	profileDrawTime	data	ref2
+98d2a0	triBuckets	data	render buckets
+a63564	quadBuckets	data	ref113
+ab43e0	bufferDescription	data	ref8
+ab43f4	renderCount	data	ref26
+ab43f8	matrixWorld	data	ref4
+ab43fc	matrixView	data	ref5
+ab4400	renderFrame	data	ref3
+ab4404	wadSize	data	ref3
+ab4408	particlePolys	data	ref14
+ab440c	linePrims	data	ref19
+ab4410	scanPhase	data	ref4
+ab4414	loadPercent	data	ref5
+ab4418	particleLife	data	ref9
+ab4420	numberText	data	ref10
+ab4520	particleX	data	ref9
+ab4524	currentWad	data	ref3
+ab4528	particleY	data	ref9
+ab452c	loadFrame	data	ref8
+ab4530	particleVelX	data	ref7
+ab4534	particleVelY	data	ref6
+ab4538	vsyncBusy	data	ref1
+ab453c	wadRemaining	data	ref3
+ab4540	barHeight	data	ref9
+ab45c0	screenFillTop	data	ref2
+ab45c4	screenFill1	data	ref2
+ab45c8	textureX	data	ref8
+ab45ca	textureY	data	ref12
+ab45ce	clutX	data	ref9
+ab45d0	clutY	data	ref5
+ab45d4	raceContext	data	ref4
+ab45d8	joyButtons	data
+ab45dc	blinkFlag	data	ref32
+ab45e0	myBestRace	data	ref1
+ab45e4	joyPressed	data	ref2
+ab45e8	clipLevel	data	ref4
+ab45f0	shipRank	data	ref2
+ab45f2	shipOrder	data	ref7
+ab462c	raceOutcome	data	ref1
+ab4630	g_cdTrackBuffer	data
+ab4680	trackNo	data	ref1
+ab4684	menuHeld	data	ref1
+ab4688	mouseEnabled	data	ref1
+ab4690	scaleTableX	data	ref4
+ab4910	scaleTableY	data	ref4
+ab4e10	cdMusicCount	data	ref15
+ab4e14	D_ab4e14	data
+ab4e18	CameraUpdate	data	ref11
+ab4e1c	D_ab4e1c	data
+ab4e20	errorString	data	ref35
+ab4f20	hudMessage	data	ref1
+ab4f60	track	data	ref273
+ab4f70	savedLapTimes	data	ref7
+ab4f74	raceResetWord0	data
+ab4f78	raceResetWord1	data
+ab4f7c	raceResetWord2	data
+ab4f80	raceResetWord3	data
+ab4f84	padPressed	data	ref3
+ab4f86	playerPosition	data
+ab4f88	raceEndState	data	ref7
+ab4f8c	cdMusicTrack	data	ref18
+ab4f90	textureTable	data	ref5
+ab5c10	ownShip	data	ref161
+ab5c14	cameraPtr	data	ref72
+ab5c18	joystickPresent	data	ref1
+ab5c1c	turnDivisor	data	ref1
+ab5c1e	shipClassIndex	data	ref11
+ab5c20	attractDelayFrames	data	ref4
+ab5c30	shieldParams	data	ref1
+ab6e30	roadSectionCount	data	ref3
+ab6e34	blinkFrame	data	ref1
+ab6e38	activeShipCount	data	ref7
+ab6e3a	prevMenuHeld	data	ref1
+ab6e3c	heap	data	ref36
+ab6e40	prevPadButtons	data
+ab6e42	padButtons	data	ref2
+ab6e44	trackVertexCursor	data	ref18
+ab6e48	linkSendFlag	data	ref6
+ab6e4c	idleTimer	data	ref1
+ab6e50	scenePath	data	ref8
+ab6f50	joyNumDevs	data	ref1
+ab6f60	sharedPrimTable	data	ref2
+abbf60	trackObjects	data	ref1
+abbf70	keyBindings	data	ref6
+abbf90	keysHeld	data
+abbf92	continuesLeft	data	ref6
+abbf94	D_abbf94	data
+abbf98	quadIndex	data	ref2
+abbf9c	menuKeys	data	ref12
+abbfa0	prevJoyButtons	data
+abbfa4	keysPressed	data	ref13
+abbfb0	gameKeys	data	ref12
+abbfe0	raceCompleteFlag	data	ref2
+abbfe4	gameType	data	ref44
+abbfe8	numTrackSections	data	ref15
+abbfea	steerAnalog	data	ref3
+abbfec	linkRaceDone	data	ref2
+abbfee	prevKeysHeld	data
+abbff0	weaponGridSections	data	ref1
+abc000	padBindings	data	ref8
+abc020	raceLines	data	ref15
+abc024	racingLine	data	ref3
+abe5a0	g_keyboardCode	data	ref30
+abe5a2	menuLatch	data
+abe5a4	reserveHeap	data	ref37
+abe5a8	finishPosition	data	ref9
+abe5aa	noCheckPoints	data	ref2
+abe5ac	numTex	data	ref7
+abe5b0	myBestLap	data	ref1
+abe5c0	droidStartSections	data	ref1
+abe5d8	droidPickSection	data
+abe5e0	lightSections	data	ref2
+abe5ec	startDroidSection	data
+abe5f0	pitCycleFlag	data	ref3
+abe600	waterfallBuf	data	ref3
+abe620	pitCycleLength	data	ref1
+abe630	explodeBillboards	data	ref23
+abea30	birdTexture	data	ref32
+abeab0	ringBluePrims	data	ref42
+abee30	ringPrims	data	ref18
+ac0030	birds	data	ref43
+ac0040	explodeTexture	data	ref12
+ac00c0	explosions	data	ref118
+ac0440	rings	data	ref20
+ac0520	explodePrims	data	ref23
+ac0a20	ringOrangePrims	data	ref42
+ac0da0	birdSectionB	data	ref3
+ac0db0	electrics	data	ref72
+ac3cb0	birdSectionA	data	ref3
+ac3cb4	birdPrims	data	ref8
+ac3cc0	primitiveBuffer	data	ref1
+b344c0	DrawEnv0	data	ref1
+b34520	DispEnv0	data	ref7
+b34528	screenOffsetX	data	ref11
+b3452a	screenOffsetY	data	ref7
+b34540	trailStage	data	ref329
+b3c540	D_b3c540	data
+b3c544	particleOrangeColour	data	ref3
+b3c548	particleGreyColour	data	ref5
+b3c54c	particleDarkGreyColour	data	ref3
+b3c550	particleBlueColour	data	ref5
+b3c554	localRandomOn	data
+b3c560	fontGlyphs16	data	ref2
+b3c6e0	fontGlyphs12	data	ref5
+b3c880	fontGlyphs8	data	ref2
+b3c886	glyphWidth	data	ref1
+b3ca00	menuBarPoly	data	ref92
+b3ca30	trackNameText	data
+b3ca80	panelQuads	data	ref10
+b3cb20	currentRacePosition	data
+b3cb24	circuitCount	data	ref5
+b3cb28	droneSwitchStep	data
+b3cb2a	continueAnimFrame	data	ref6
+b3cb2c	sampleBuffer	data	ref2
+b3cb30	ambientLoop3Voice	data
+b3cb32	remoteEngineVoice2	data	ref6
+b3cb34	turbulenceVoice	data	ref8
+b3cb36	scrapeVoice	data	ref3
+b3cb38	playerEngineVoice	data	ref10
+b3cb40	previousSoundCamera	data	ref6
+b3cb50	sampleHandle	data	ref12
+b3cb9c	ambientLoop3Sample	data
+b3cd50	droidVoice	data	ref3
+b3cd52	shieldHumVoice	data	ref14
+b3cd54	oldcameraupdate	data
+b3cd58	remoteEngineVoice1	data	ref6
+b3cd5a	crowdVoice	data	ref2
+b3cd5c	pitAmbientVoice	data	ref4
+b3cd60	clippingBuffer	data	ref27
+b75f80	renderBuffer	data	ref1
+baf198	renderVertices	data	ref4
+baf1a0	clippedVertices	data	ref1
+bbcc60	triangleBuckets	data	ref11
+c1bcd0	sndQuarterBytes	data	ref1
+c1bcd4	decodeCount	data	ref1
+c1bce0	sndBlocks	data	ref26
+c1c4e0	sndCurBlock	data	ref25
+c1c4e4	sndBufferBytes	data	ref4
+c1c4e8	sndNumBlocks	data	ref6
+c1c4ec	sndFrameOffset	data	ref4
+c1c4f0	sndCallbackSet	data	ref3
+c1c4f4	sndCallback	data	ref2
+c1c4f8	sndVolumeTable	data	ref4
+c1c4fc	sndHalfBytes	data	ref2
+c1c500	sndUnused1	data	ref1
+c1c504	sndUnused2	data	ref1
+c1c510	funcStack	data	ref1
+c1c550	mpegScaleTable	data	ref4
+c1c554	mpegClipTable	data	ref4
+c1c55a	mpegFile	data	ref4
+c1c55c	mbTypeBTable	data	ref3
+c1c560	mbTypePTable	data	ref3
+c1c564	mbAddrIncTable	data	ref7
+c1c568	codedBlockPatternTable	data	ref5
+c1c56c	motionTable	data	ref13
+c1c570	mpegRingLimit	data	ref68
+c1c574	mpegStream	data	ref68
+c1c578	mpegAudioStarted	data	ref2
+c1c580	mpegPaletteEntries	data	ref3
+c1c980	mpegDestBase	data	ref11
+c1c984	mpegClampTable	data	ref2
+c1c988	mpegDestX1	data	ref9
+c1c990	mpegStreamResetFlag	data	ref1
+c1ca94	mpegDestY0	data	ref16
+c1ca98	mpegDestCols	data	ref8
+c1ca9c	mpegPaletteResult	data	ref7
+c1caa0	mpegPicPixels	data	ref4
+c1caa4	mpegAudioActive	data	ref6
+c1caa8	mpegBlueContribution	data	ref2
+c1caac	mpegDestRows	data	ref12
+c1cab0	mpegSrcHalfWidth	data	ref5
+c1cab4	mpegGreenCombination	data	ref2
+c1cab8	mpegHeapUsed	data	ref4
+c1cabc	mpegSrcWidth	data	ref1
+c1cac0	mpegSurface	data	ref10
+c1cac4	mpegPlaneCr	data	ref5
+c1cac8	mpegPlaneY	data	ref3
+c1cacc	mpegSoundBuf	data	ref22
+c1cad0	mpegDestX0	data	ref16
+c1cad4	mpegDestPitch	data	ref9
+c1cad8	mpegDestY1	data	ref9
+c1cadc	mpegRGB16Table	data	ref2
+c1cae0	mpegPlaneCb	data	ref5
+c1cae4	mpegRedContribution	data	ref2
+c1cae8	mpegOffscreenSurface	data	ref7
+c1caf0	mpegDisplayPalette	data	ref18
+
+
+4d8164	D_4d8164	data
+4d8208	D_4d8208	data
+
+
+ab45cc	D_ab45cc	data
+
+4d8a14	lastTopMenuSelection	data
+4d653c	neonCount	data
+4d6540	girderCount	data
+4d654c	pylonCount	data
+4d6570	torchCount	data
+4d6574	torchNumber	data
+4d657c	prmCount	data
+4d6504	firstTimeIn	data
+9751f0	tempTextureCount	data
+957550	prmObjects	data
+4d6528	trackCycleTimer	data
+957650	cdState	data
+975300	rescueData	data
+4d4ec0	spareMax	data
+903fbd	droidBlinkColourGreen	data
+903fbe	droidBlinkColourBlue	data
+975405	droidPaletteColourGreen	data
+975406	droidPaletteColourBlue	data
+9752e0	frameStart	data
+9753e0	frameTime	data
+9751e8	profileMark	data
+4d650c	dangerFlag	data
+4d6510	shipLostFlag	data
+975488	lightDroid	data
+956724	raceStartVcount	data
+9752ec	raceElapsed	data
+9752e8	savedUpperY	data
+4d6520	skycyc	data
+975158	updateTime	data
+956e40	setupTime	data
+4d4ed8	hudEnabled	data
+9752d8	prevCameraUpdate	data
+975150	drawTime	data
+9567a0	flipTime	data
+9566b4	savedCheckTimer	data
+9567b4	raceStartSection	data
+9750f0	torchLight	data
+9751a0	girderObjects	data
+975080	pylons	data

@@ -1,0 +1,11 @@
+# addr	what (removed from functions.tsv: not compiled C)
+49deec	import thunk: jmp [DirectSoundCreate]
+4a8a6c	import thunk: jmp [DirectDrawCreate]
+4a8a72	import thunk: jmp [DirectDrawEnumerateA]
+4ba2e0	data: records 16 bytes each with code pointers, 4ba2e0-4bb388 (tail of a table the splitter read as a function)
+4ba370	(inside the 4ba2e0 data table)
+4bb388	import thunk: jmp [DirectInputCreateA]
+4bb389	(split artefact: the thunk at 4bb388 starts one byte earlier)
+4bc59c	import thunk: jmp [#4]
+4bc5a2	import thunk: jmp [#2]
+4bc5a8	import thunk: jmp [#1]
