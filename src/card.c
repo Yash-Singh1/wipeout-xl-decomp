@@ -414,9 +414,9 @@ int WriteFile(void *header, char *filename, ConfigData *settings)
 
 
 /* Fills one slot's browser entries from the directory of the card, then copies the icons. */
-#ifdef VERSION_EU
-/* The European card browser predates multi-block saves: a file larger than one block is listed
-   block by block, each copying the icon of the first. */
+#ifndef VERSION_US
+/* The European and Japanese card browsers have no multi-block saves: a file larger than one
+   block is listed block by block, each copying the icon of the first. */
 void LoadCardFiles(CardSlot *cards, int slot)
 {
     DIRENTRY       directory;
@@ -599,7 +599,7 @@ void LoadCardFiles(CardSlot *cards, int slot)
                     count++;
                 }
             }
-#ifndef VERSION_EU /* the debug print was dropped from the European release */
+#ifdef VERSION_US /* the European and Japanese releases have no debug print here */
             printf("Filename = %s \n", directory.name);
 #endif
         } while (nextfile(&directory) == &directory);
@@ -784,7 +784,7 @@ next:
 }
 
 
-#ifdef VERSION_EU /* tests firstfile for null instead of for the record buffer */
+#ifndef VERSION_US /* tests firstfile for null instead of for the record buffer */
 void LoadFirstFile(u_short *count, int slot, char *name)
 {
     char     record[40];

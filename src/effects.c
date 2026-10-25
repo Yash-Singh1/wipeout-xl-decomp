@@ -69,7 +69,6 @@ int shakeAmount;
 int droidBlinkTick;
 TrackSection *startDroidSection;
 #include "functions.h"
-#include "include_asm_g8.h"
 
 /* $gp-relative globals are tentative definitions; the rest are extern. */
 u_char   pitCycleFlag;

@@ -4,7 +4,6 @@
 #include "hiscores.h"
 #include "card.h"
 #include "pad.h"
-#include "include_asm_g8.h"
 
 /* String data that is copied a word at a time lives on a word boundary. */
 #define ALIGN4 __attribute__ ((aligned (4)))
@@ -908,6 +907,14 @@ int MenuControl(ConfigData *gameData, void *menuTexture, int *state, int raceMem
 /* The polygon of the button being drawn, addressed from the start of the button table. */
 #define BUTTON_POLY (*(POLY_FT4 *)((CurrentScreen * 40 + buttonCount * 80) + (long)polys))
 
+/* Where a label left of its button (the back button's) starts: the Japanese "GO BACK" is
+   longer than "BACK". */
+#ifdef VERSION_JP
+#define LEFT_LABEL_X (-40)
+#else
+#define LEFT_LABEL_X (-25)
+#endif
+
 void DoButton(short x, short y, int requestedIcon, char *text)
 {
     Texture *texture;
@@ -985,10 +992,10 @@ void DoButton(short x, short y, int requestedIcon, char *text)
         (*(POLY_FT4 *)((glyphNo*80) - -(frame*40) + (long)menuButtons)).clut=texture->cba;}
         AddPrim(OT[CurrentScreen],& menuButtons[buttonCount][CurrentScreen] );
         if(playerControl[0].head==2) {
-            if(iconNo==9) Print(text,x-25,y+6,8);
+            if(iconNo==9) Print(text,x+LEFT_LABEL_X,y+6,8);
             else Print(text,x+18,y+6,8);
         } else {
-            if(iconNo==3) Print(text,x-25,y+6,8);
+            if(iconNo==3) Print(text,x+LEFT_LABEL_X,y+6,8);
             else Print(text,x+18,y+6,8);
         }
         buttonCount++;
@@ -1536,7 +1543,7 @@ void CopyGameData(ConfigData *gameData, MenuSelection *selectionArg, short saveS
             selection->calibration[1] = keyConfig->calibration[1];
             keyConfig->active = 0;
             selection->current = 0;
-#ifndef VERSION_EU /* the European release has no replay lock */
+#ifdef VERSION_US /* the European and Japanese releases have no replay lock */
             replayDisabled = 1;
 #endif
         }
@@ -1558,7 +1565,7 @@ void CopyGameData(ConfigData *gameData, MenuSelection *selectionArg, short saveS
             menu[currMenu].selection = 0;
             for (i = 0; i < 3; i++)
                 negconEditing[i] = 0;
-#ifndef VERSION_EU /* the European release has no replay lock */
+#ifdef VERSION_US /* the European and Japanese releases have no replay lock */
             replayDisabled = 1;
 #endif
         } else {
@@ -1690,7 +1697,7 @@ int DisplayCardBack(MenuPolys *polys, int cursor, int card, SaveSelection *saveS
     char *polyBaseB;
     s32 polyOffsetA;
     s32 polyOffsetB;
-#ifdef VERSION_EU
+#ifndef VERSION_US
     s32 nameOffset;
 #endif
     s32 slotOffset;
@@ -1761,7 +1768,7 @@ int DisplayCardBack(MenuPolys *polys, int cursor, int card, SaveSelection *saveS
                         polys->background[slotRow][CurrentScreen].g0 = 0;
                         polys->background[slotRow][CurrentScreen].b0 = 0;
                         for (entryIndex = 0; entryIndex < 15; entryIndex++) {
-#ifdef VERSION_EU
+#ifndef VERSION_US
                             /* Split the 88-byte stride to keep this calculation inside the scan. */
                             nameOffset = cursor * 3;
                             nameOffset = (nameOffset * 4 - cursor) * 8;
@@ -1771,7 +1778,7 @@ int DisplayCardBack(MenuPolys *polys, int cursor, int card, SaveSelection *saveS
                             if (strncmp(cardSlots[card].entry[cursor].filename,
 #endif
                                         cardSlots[card].entry[entryIndex].filename, 20) == 0
-#ifndef VERSION_EU /* EU groups matching filenames without multi-block metadata. */
+#ifdef VERSION_US /* EU and JP group matching filenames without multi-block metadata. */
                                 && (cardSlots[card].entry[entryIndex].multi == 1 || cursor == entryIndex)
 #endif
                                 ) {
@@ -1799,7 +1806,7 @@ int DisplayCardBack(MenuPolys *polys, int cursor, int card, SaveSelection *saveS
                         for (entryIndex = 0; entryIndex < 15; entryIndex++) {
                             if (strncmp(cardSlots[prevCard].entry[cursor].filename,
                                         cardSlots[prevCard].entry[entryIndex].filename, 20) != 0
-#ifndef VERSION_EU /* EU groups matching filenames without multi-block metadata. */
+#ifdef VERSION_US /* EU and JP group matching filenames without multi-block metadata. */
                                 || (cardSlots[prevCard].entry[entryIndex].multi == 0 && cursor != entryIndex)
 #endif
                                 ) {
@@ -1995,8 +2002,8 @@ int DisplayCardBack(MenuPolys *polys, int cursor, int card, SaveSelection *saveS
                 iconX = 45;
             iconYPos = iconYPos + 19;
         }
-#ifdef VERSION_EU
-        /* The EU build resets X before Y at the next card. */
+#ifndef VERSION_US
+        /* The EU and JP builds reset X before Y at the next card. */
         iconX = 223;
         iconYPos = 85;
 #else

@@ -44,10 +44,14 @@ enum {
 };
 
 /* Per-slot flags byte; the flags live at the start of each card slot record (90 bytes, 88 in
-   the European release: see CardEntry in card.h). */
+   the European and Japanese releases: see CardEntry in card.h). */
 typedef struct CardFlags {
     unsigned char flags;
-    unsigned char pad[REGION(90, 88) - 1];
+#ifdef VERSION_US
+    unsigned char pad[89];
+#else
+    unsigned char pad[87];
+#endif
 } CardFlags;
 
 /* Six rows of box polys (one pair per screen buffer) and the outline of the screen. */

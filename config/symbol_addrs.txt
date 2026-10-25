@@ -32,7 +32,7 @@ BlockFill = 0x80068924; // type:func
 openwadfile = 0x8006A338; // type:func
 openwadfilenvc = 0x8006A460; // type:func
 
-// Function starts from Binary Ninja (tools/bn_functions.tsv); improves splat splitting.
+// Further function starts; they improve splat splitting.
 AsmDrawObject = 0x80010000; // type:func
 AsmDrawObjectLit = 0x80011DE8; // type:func
 AsmDrawObjectFixed = 0x80012ED4; // type:func

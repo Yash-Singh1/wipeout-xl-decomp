@@ -1,7 +1,6 @@
 #include "options.h"
 #include "functions.h"
 #include "pad.h"
-#include "include_asm_g8.h"
 
 
 extern u_char gameType;

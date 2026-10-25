@@ -3,15 +3,22 @@
 
 /*
  * Release selection.  The same sources build the US release (Wipeout XL, SCUS_943.51,
- * NTSC) and the European release (Wipeout 2097, SLES_003.27, PAL).  The build defines
- * VERSION_EU for the European one; without it the US release is built.
+ * NTSC), the European release (Wipeout 2097, SLES_003.27, PAL) and the Japanese release
+ * (Wipeout XL, SIPS_600.10, NTSC).  The build defines VERSION_EU for the European one and
+ * VERSION_JP for the Japanese one; with neither the US release is built.
  *
- * Prefer the macros below to scattered #ifdefs.  Use a plain
- *     #ifdef VERSION_EU ... #else ... #endif
- * only where the code really differs between the releases (memory card handling).
+ * The Japanese exe is NTSC like the US one, but its code otherwise follows the European
+ * release: the memory card browser, the menus and the collision damage are as there.  The
+ * US release alone has the changes made last (the Red Book logo, the replay lock, multi-block
+ * card files), so code the European and Japanese releases share is written
+ *     #ifdef VERSION_US ... #else ... #endif
+ * and #ifdef VERSION_EU is left for the PAL changes.
+ *
+ * Prefer the macros below to scattered #ifdefs.  Use a plain #ifdef only where the code
+ * really differs between the releases (memory card handling).
  */
 
-#ifndef VERSION_EU
+#if !defined(VERSION_EU) && !defined(VERSION_JP)
 #define VERSION_US 1
 #endif
 

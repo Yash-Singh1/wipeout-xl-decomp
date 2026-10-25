@@ -23,7 +23,6 @@ x87 conversion consumes only the top cell and preserves lower cells. Aliasing
 stores, calls and REP operations remain in load histories when relevant;
 unmatched live bits and unproved pointer extents refuse. A store with a resolved
 return-address overlap also refuses.
-AGENTS.md describes the individual acceptance and refusal rules.
 
 Anything the evaluator doesn't model raises Unsupported, which counts as a
 difference: the checker can reject an equivalent function but should not

@@ -1,0 +1,145 @@
+# The files of scus_943.51.yaml at their offsets in the Japanese exe.
+name: SIPS_600.10 (Wipeout XL Japan)
+sha1: ce1e6a35115bdda05ef613d00c581e5341bbffce
+options:
+  basename: SIPS_600.10
+  target_path: orig/SIPS_600.10
+  elf_path: build/jp/SIPS_600.10.elf
+  base_path: .
+  platform: psx
+  compiler: GCC
+
+  asm_path: asm/jp
+  src_path: asm/jp/stubs
+  build_path: build/jp
+  ld_script_path: SIPS_600.10.ld
+  symbol_addrs_path: config/symbol_addrs_jp.txt
+  undefined_funcs_auto_path: undefined_funcs_auto_jp.txt
+  undefined_syms_auto_path: undefined_syms_auto_jp.txt
+
+  gp_value: 0x80093A44
+  find_file_boundaries: True
+  use_legacy_include_asm: False
+  migrate_rodata_to_functions: True
+  section_order: [".rodata", ".text", ".data", ".bss"]
+  ld_bss_is_noload: True
+  create_undefined_funcs_auto: True
+  create_undefined_syms_auto: True
+  asm_jtbl_label_macro: jlabel
+  string_encoding: ASCII
+  subalign: 4
+  emit_subalign: True
+  ld_align_segment_vram_end: False
+  ld_align_section_vram_end: False
+  data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+segments:
+  - name: header
+    type: header
+    start: 0x0
+
+  - name: pre
+    type: code
+    start: 0x800
+    vram: 0x80010000
+    subsegments:
+      - [0x800, asm]
+
+  - name: main
+    type: code
+    start: 0x6C80
+    vram: 0x80016480
+    bss_size: 0x690E4
+    subsegments:
+      - [0x6C80, .rodata, main]
+      - [0x6D88, .rodata, object]
+      - [0x6DB0, rodata]
+      - [0x6E18, .rodata, tim]
+      - [0x6EE4, rodata]
+      - [0x6F1C, .rodata, track]
+      - [0x718C, .rodata, ttf]
+      - [0x7220, .rodata, ships]
+      - [0x7328, .rodata, scene]
+      - [0x7504, rodata]
+      - [0x751C, .rodata, weapon]
+      - [0x75C8, .rodata, collide]
+      - [0x7618, rodata]
+      - [0x77EC, .rodata, raceinit]
+      - [0x7928, .rodata, ayrace]
+      - [0x7A24, rodata]
+      - [0x7BD4, .rodata, init]
+      - [0x7CDC, .rodata, sound]
+      - [0x7F4C, rodata]
+      - [0x80B0, .rodata, radscn]
+      - [0x816C, rodata]
+      - [0x8244, .rodata, iso9660]
+      - [0x8254, rodata]
+      - [0x92A4, .rodata, menus]
+      - [0x9504, .rodata, card]
+      - [0x9570, .rodata, pad]
+      - [0x9598, rodata]
+      - [0x9E00, .rodata, display]
+      - [0x9E30, rodata]
+      - [0x9E94, .rodata, wadfile]
+      - [0x9EE8, .rodata, progress]
+      - [0x9F38, rodata]
+      - [0x9FBC, .rodata, sfx]
+      - [0xA008, .rodata, hiscores]
+      - [0xA208, rodata]
+      - [0xA220, rodata]
+      - [0xA2A4, rodata]
+      - [0xAC20, c, main]
+      - [0xBA50, c, object]
+      - [0xDD60, c, malloc]
+      - [0xDFF8, c, file]
+      - [0xE150, c, tim]
+      - [0xE7A0, c, skeleton]
+      - [0xF120, c, track]
+      - [0x10754, c, draw]
+      - [0x10B24, c, ttf]
+      - [0x10D6C, c, camera]
+      - [0x12288, c, ships]
+      - [0x14424, c, control]
+      - [0x158E8, c, utils]
+      - [0x15C8C, c, search]
+      - [0x16124, c, scene]
+      - [0x16FB8, c, weapon]
+      - [0x2084C, c, dynam]
+      - [0x225BC, c, collide]
+      - [0x26768, c, hud]
+      - [0x2C138, c, raceinit]
+      - [0x2D418, c, ayrace]
+      - [0x2F150, c, racectrl]
+      - [0x321B8, c, init]
+      - [0x33248, c, sound]
+      - [0x34C84, c, options]
+      - [0x36768, c, radscn]
+      - [0x374F0, c, error]
+      - [0x375E8, c, effects]
+      - [0x3BEB0, c, combat]
+      - [0x3D258, c, lzss]
+      - [0x3D3FC, c, iso9660]
+      - [0x3E0F8, c, menus]
+      - [0x52560, c, trackasm]
+      - [0x52C78, c, card]
+      - [0x54A20, c, crack]
+      - [0x55534, c, pad]
+      - [0x5687C, c, droid]
+      - [0x574EC, c, animover]
+      - [0x57A6C, c, credits]
+      - [0x583D4, c, display]
+      - [0x58DF8, c, progress]
+      - [0x5A728, c, wadfile]
+      - [0x5AA6C, c, sparks]
+      - [0x5FC9C, c, trails]
+      - [0x64960, c, ghost]
+      - [0x64F10, c, drone]
+      - [0x67538, c, sfx]
+      - [0x69AC4, c, hiscores]
+      - [0x6AA14, asm]
+      - [0x7E8D8, data]
+      - { start: 0x845AC, type: .sdata, name: options, linker_section_order: .data }
+      - [0x845B0, data]
+      - { type: bss, vram: 0x800945B4 }
+  - [0x84DB4]

@@ -48,7 +48,7 @@ typedef struct CardEntry {
     char      reserved[26];
 #endif
     u_char    type;
-#ifndef VERSION_EU /* the European card browser has no multi-block files */
+#ifdef VERSION_US /* the European and Japanese card browsers have no multi-block files */
     u_char    first;
     u_char    multi;
 #endif
@@ -69,7 +69,13 @@ typedef union CardFilename {
 } CardFilename;
 
 /* The game's product code: the memory card directory name of its saves. */
-#define CARD_GAME_CODE REGION_STR("BASCUS-94351", "BESLES-00327")
+#if defined(VERSION_EU)
+#define CARD_GAME_CODE "BESLES-00327"
+#elif defined(VERSION_JP)
+#define CARD_GAME_CODE "BISIPS-60010"
+#else
+#define CARD_GAME_CODE "BASCUS-94351"
+#endif
 
 /* Size of the header block at the start of a save file; the European card format uses half. */
 #define CARD_HEADER_SIZE REGION(0x200, 0x100)

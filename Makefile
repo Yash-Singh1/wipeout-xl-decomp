@@ -1,6 +1,7 @@
-# Byte-exact rebuild of SCUS_943.51 (Wipeout XL, USA) or, with VERSION=eu, of SLES_003.27
-# (Wipeout 2097, Europe): the same sources, built with -DVERSION_EU.
-# Run via ./build.sh [eu] (uses the Docker toolchain) or directly on a host with mips-linux-gnu binutils.
+# Byte-exact rebuild of SCUS_943.51 (Wipeout XL, USA), with VERSION=eu of SLES_003.27
+# (Wipeout 2097, Europe) or with VERSION=jp of SIPS_600.10 (Wipeout XL, Japan): the same
+# sources, built with -DVERSION_EU or -DVERSION_JP.
+# Run via ./build.sh [eu|jp] (uses the Docker toolchain) or directly on a host with mips-linux-gnu binutils.
 VERSION ?= us
 .DEFAULT_GOAL := all
 CROSS   ?= mips-linux-gnu-
@@ -17,6 +18,15 @@ UNDEF_SYMS  := undefined_syms_auto_eu.txt
 UNDEF_FUNCS := undefined_funcs_auto_eu.txt
 EXTRA_LD    := -T config/eu_link_syms.ld
 VERSION_DEF := -DVERSION_EU
+else ifeq ($(VERSION),jp)
+TARGET  := SIPS_600.10
+BUILD   ?= build/jp
+LDBUILD := build/jp
+PADSIZE := 0x85000
+UNDEF_SYMS  := undefined_syms_auto_jp.txt
+UNDEF_FUNCS := undefined_funcs_auto_jp.txt
+EXTRA_LD    := -T config/jp_link_syms.ld
+VERSION_DEF := -DVERSION_JP
 else ifeq ($(VERSION),us)
 TARGET  := SCUS_943.51
 BUILD   ?= build
@@ -27,7 +37,7 @@ UNDEF_FUNCS := undefined_funcs_auto.txt
 EXTRA_LD    :=
 VERSION_DEF := -DVERSION_US
 else
-$(error VERSION must be us or eu)
+$(error VERSION must be us, eu or jp)
 endif
 ASFLAGS := -EL -march=r3000 -mtune=r3000 -mabi=32 -no-pad-sections -G0 -Iinclude
 # The linker script names objects under $(LDBUILD)/; another BUILD dir gets a rewritten copy.
@@ -50,17 +60,17 @@ CPPFLAGS := -Iinclude -undef -D__GNUC__=2 -Dmips -D__mips__ -D__mips -Dpsx -D__p
             -D_LANGUAGE_C -DLANGUAGE_C -D_MIPSEL -nostdinc -lang-c $(VERSION_DEF)
 CFLAGS  := -quiet -O2 -G8 -mips1 -mcpu=3000 -fgnu-linker -mgas -msoft-float
 
-ifeq ($(VERSION),eu)
-# The EU split lives in asm/eu.  Every file in src/ is built with -DVERSION_EU; the PsyQ
-# libraries are linked from their split asm in asm/eu/text/.
+ifneq ($(VERSION),us)
+# The EU split lives in asm/eu, the JP one in asm/jp.  Every file in src/ is built with
+# -DVERSION_EU or -DVERSION_JP; the PsyQ libraries are linked from their split asm in
+# asm/eu/text/ (asm/jp/text/).
 EU_C      := $(basename $(notdir $(wildcard src/*.c)))
-EU_ALL    := $(basename $(notdir $(wildcard asm/eu/text/*.s)))
+EU_ALL    := $(basename $(notdir $(wildcard asm/$(VERSION)/text/*.s)))
 EU_ASM    := $(filter-out $(EU_C),$(EU_ALL))
-S_FILES   := $(shell find asm/eu -name '*.s' -not -path 'asm/eu/nonmatchings/*' -not -path 'asm/eu/text/*')
+S_FILES   := $(shell find asm/$(VERSION) -name '*.s' -not -path 'asm/$(VERSION)/nonmatchings/*' -not -path 'asm/$(VERSION)/text/*')
 C_FILES   := $(EU_C:%=src/%.c)
 O_FILES   := $(S_FILES:%=$(BUILD)/%.o) $(C_FILES:%=$(BUILD)/%.o) $(EU_ASM:%=$(BUILD)/src/%.c.o)
-ASM_ROOT_SED = sed -i 's|asm/nonmatchings/|asm/eu/nonmatchings/|g' $(BUILD)/$*.c.s
-$(EU_ASM:%=$(BUILD)/src/%.c.o): $(BUILD)/src/%.c.o: asm/eu/text/%.s
+$(EU_ASM:%=$(BUILD)/src/%.c.o): $(BUILD)/src/%.c.o: asm/$(VERSION)/text/%.s
 	@mkdir -p $(dir $@)
 	$(AS) $(ASFLAGS) -o $@ $<
 $(EU_ALL:%=$(BUILD)/src/%.c.o): $(BUILD)/src/%.c.o: $(BUILD)/src/%.origin
@@ -70,11 +80,10 @@ $(EU_ASM:%=$(BUILD)/src/%.origin): FORCE
 	@mkdir -p $(dir $@); echo asm > $@.new; cmp -s $@.new $@ && rm $@.new || mv $@.new $@
 FORCE:
 else
-# asm/nonmatchings/ holds per-function asm pulled in by INCLUDE_ASM from src/.
-S_FILES := $(shell find asm -name '*.s' -not -path 'asm/nonmatchings/*' -not -path 'asm/eu/*')
+# splat also writes per-function asm for the C files to asm/nonmatchings/; it isn't used.
+S_FILES := $(shell find asm -name '*.s' -not -path 'asm/nonmatchings/*' -not -path 'asm/eu/*' -not -path 'asm/jp/*')
 C_FILES := $(shell find src -name '*.c')
 O_FILES := $(S_FILES:%=$(BUILD)/%.o) $(C_FILES:%=$(BUILD)/%.o)
-ASM_ROOT_SED = true
 endif
 
 all: $(BUILD)/$(TARGET)
@@ -95,7 +104,6 @@ $(BUILD)/%.c.o: %.c $(FLAGS_STAMP) $(wildcard include/*.h)
 	$(CPP) $(CPPFLAGS) $< -o $(BUILD)/$*.c.i
 	$(CC1_SN) $(BUILD)/$*.c.i $(BUILD)/$*.c.s $(filter-out -fgnu-linker,$(CFLAGS))
 	sed -i 's/\r$$//' $(BUILD)/$*.c.s
-	$(ASM_ROOT_SED)
 	$(MASPSX) $(BUILD)/$*.c.s > $(BUILD)/$*.c.maspsx.s
 	$(AS) $(ASFLAGS) -o $@ $(BUILD)/$*.c.maspsx.s
 

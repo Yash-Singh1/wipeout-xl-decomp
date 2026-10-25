@@ -1,5 +1,4 @@
 #include "functions.h"
-#include "include_asm_g8.h"
 
 extern MATRIX cameraMatrix;
 extern VECTOR cameraOffset;

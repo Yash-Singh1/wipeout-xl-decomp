@@ -6,7 +6,6 @@
 #include "hud.h"
 #include "hiscores.h"
 #include "raceinit.h"
-#include "include_asm_g8.h"
 
 /* $gp-relative globals are tentative definitions; the rest are extern. */
 short continueAnimFrame;

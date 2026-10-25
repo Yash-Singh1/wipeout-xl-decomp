@@ -2,7 +2,6 @@
 #define EFFECTS_H
 
 #include "functions.h"
-#include "include_asm_g8.h"
 #include "tim.h"
 
 /* Mono-rail carriage: last ship lap and per-frame deltas along the rail. */

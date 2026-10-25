@@ -4,7 +4,6 @@
 #include "weapon.h"
 #include "scene.h"
 #include "sparks.h"
-#include "include_asm_g8.h"
 
 /* Frames between minigun bursts. */
 #define MINIGUN_FIRE_INTERVAL REGION(30, 23)

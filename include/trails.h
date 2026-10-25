@@ -16,7 +16,12 @@ typedef struct TrailSegment {
     DR_MODE drawMode[2];    /* double buffered */
 } TrailSegment;
 
+/* The Japanese release keeps two segments fewer per trail. */
+#ifdef VERSION_JP
+#define TRAIL_SEGMENTS 9
+#else
 #define TRAIL_SEGMENTS 11
+#endif
 
 /* A ship's trail: a ring of segments, newest at index current. */
 struct Trail {

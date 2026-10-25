@@ -4,7 +4,6 @@
 #include "ships.h"
 #include "pad.h"
 #include "menus.h"
-#include "include_asm_g8.h"
 
 /* $gp-relative globals are tentative definitions; the rest are extern. */
 u_char cheatWeapon;

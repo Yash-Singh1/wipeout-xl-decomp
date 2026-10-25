@@ -1,7 +1,6 @@
 #include "weapon.h"
 #include "hud.h"
 #include "hiscores.h"
-#include "include_asm_g8.h"
 
 /* Font textures are loaded at consecutive texture-table slots; the last one is the dimmed colour. */
 extern short   hudTexIndex16;

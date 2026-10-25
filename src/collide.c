@@ -1,6 +1,5 @@
 #include "functions.h"
 #include "ships.h"
-#include "include_asm_g8.h"
 
 /* $gp-relative globals are tentative definitions; the rest are extern. */
 extern int    ownShip;
@@ -714,16 +713,16 @@ void WingCollision(ShipData *playerShip, Face *facePtr, int direction, int alpha
   {
     DamageCollide(129, remoteShip);
   }
-#ifdef VERSION_EU
+#ifdef VERSION_US
   else
+    if (!(playerShip->combatAttr & 1))
   {
-    /* The European build has no combatAttr bit 1 test on this branch. */
     DamageCollide(129, ownShip);
   }
 #else
   else
-    if (!(playerShip->combatAttr & 1))
   {
+    /* The European and Japanese builds have no combatAttr bit 1 test on this branch. */
     DamageCollide(129, ownShip);
   }
 #endif
@@ -773,17 +772,17 @@ void NoseCollision(ShipData *playerShip, Face *facePtr, int direction, int alpha
     DamageCollide(129, remoteShip);
     DamageCollide(129, remoteShip);
   }
-#ifdef VERSION_EU
+#ifdef VERSION_US
   else
+    if (!(playerShip->combatAttr & 1))
   {
-    /* The European build has no combatAttr bit 1 test on this branch. */
     DamageCollide(129, ownShip);
     DamageCollide(129, ownShip);
   }
 #else
   else
-    if (!(playerShip->combatAttr & 1))
   {
+    /* The European and Japanese builds have no combatAttr bit 1 test on this branch. */
     DamageCollide(129, ownShip);
     DamageCollide(129, ownShip);
   }

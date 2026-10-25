@@ -3,7 +3,7 @@
 #define TrackVersion 8
 extern Object     **trackObjects;
 extern int          raceType;
-#ifdef VERSION_US
+#ifndef VERSION_EU
 extern u_short      clipLevel;
 extern long         clipNearTable1[];
 extern long         clipFarTable1[];

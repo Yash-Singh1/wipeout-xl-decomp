@@ -1,4 +1,3 @@
-#include "include_asm_g8.h"
 #include "functions.h"
 #include "hud.h"
 #include "hiscores.h"

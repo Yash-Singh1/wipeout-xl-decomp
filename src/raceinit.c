@@ -1,6 +1,5 @@
 #include "raceinit.h"
 #include "track.h"
-#include "include_asm_g8.h"
 int     attractStep;
 u_int   randSeed;
 u_char  cdMusicIndex;

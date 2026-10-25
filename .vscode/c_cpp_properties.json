@@ -59,6 +59,25 @@
             "intelliSenseMode": "linux-gcc-x86"
         },
         {
+            "name": "PS1 (Japan)",
+            "includePath": [
+                "${workspaceFolder}/include"
+            ],
+            "defines": [
+                "VERSION_JP",
+                "psx",
+                "__psx__",
+                "mips",
+                "__mips__",
+                "LANGUAGE_C",
+                "_LANGUAGE_C",
+                "_MIPSEL"
+            ],
+            "compilerPath": "",
+            "cStandard": "gnu89",
+            "intelliSenseMode": "linux-gcc-x86"
+        },
+        {
             "name": "Intro players (xtro)",
             "includePath": [
                 "${workspaceFolder}/xtro/include"

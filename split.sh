@@ -2,9 +2,9 @@
 # Regenerate asm/, the linker script and the auto symbol files from the retail EXE.
 set -e
 cd "$(dirname "$0")"
-# keep the European split (asm/eu, build/eu): it has its own script, split_eu.sh
+# keep the European and Japanese splits (asm/eu, asm/jp): they have their own scripts, split_eu.sh and split_jp.sh
 for d in asm build; do
-    [ -d $d ] && find $d -mindepth 1 -maxdepth 1 ! -name eu -exec rm -rf {} +
+    [ -d $d ] && find $d -mindepth 1 -maxdepth 1 ! -name eu ! -name jp -exec rm -rf {} +
 done
 rm -f SCUS_943.51.ld undefined_funcs_auto.txt undefined_syms_auto.txt
 python3 -m splat split scus_943.51.yaml

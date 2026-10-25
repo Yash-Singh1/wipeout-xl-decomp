@@ -159,12 +159,16 @@ void main(void) {
         VSync(0);
         frame += 1;
     } while (frame < PAL_TIME(0x3C));
+#ifdef VERSION_JP /* the Japanese release shows no Red Book logo, it waits one frame */
+    VSync(0);
+#else
     Load16BitTexture((int)"c:\\wipeout2\\textures\\" REGION_STR("redbntsc.tim", "redbpal.tim"), 1);
     frame = 0;
     do {
         VSync(0);
         frame += 1;
     } while (frame < PAL_TIME(0x78));
+#endif
     frame = 0;
     ShowLoadMessage();
     do {

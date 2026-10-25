@@ -2,7 +2,6 @@
 #include "track.h"
 #include "weapon.h"
 #include "dynam.h"
-#include "include_asm_g8.h"
 
 extern TrackData   *track;
 extern int          raceType;

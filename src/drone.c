@@ -1,7 +1,6 @@
 #include "functions.h"
 #include "weapon.h"
 #include "track.h"
-#include "include_asm_g8.h"
 
 extern TrackData *track;
 extern VECTOR     racingLine[];
